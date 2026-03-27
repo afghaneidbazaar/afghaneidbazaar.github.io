@@ -106,24 +106,24 @@
 <img alt="Freshta Gold Logo" class="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhjluz-_6WsWoVETj031mE58Xu8VM7oe1Pt1yHj3oEf3pQrXIqVZj-94XKDTTLRUj5IAps5MzNBXZClE0PDRIduadgyP_tZ8Dfedo_O0gdEAuwRTPy3vm0pyuBd0nCLQuYrPcOhsXrDsnjVH7Z2ZDXzzOByWAa1f8pzQ0UPEATvdpc41f74Wzi006eD-u_dUP2ewQpZEuNqr5mYdeKcdAn35ThGgsP6q00SUNJOuprX1VzDylgtIkVD6VzDqpxQqCBC40Ph4x7R6A" style="filter: brightness(0) saturate(100%) invert(75%) sepia(35%) saturate(544%) hue-rotate(3deg) brightness(91%) contrast(85%);"/>
 </div>
 <div class="hidden lg:flex items-center space-x-8">
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="index.html">Home</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="vendors.html">Vendors</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1" href="sponsors.html">Sponsors</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="about.html">About Eid</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="gallery.html">Gallery</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="faq.html">FAQ</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="team.html">Team</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="index.html" data-i18n="nav.home">Home</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="vendors.html" data-i18n="nav.vendors">Vendors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="sponsors.html" data-i18n="nav.sponsors">Sponsors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="about.html" data-i18n="nav.about">About Eid</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="faq.html" data-i18n="nav.faq">FAQ</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="team.html" data-i18n="nav.team">Team</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="contact.html" data-i18n="nav.contact">Contact</a>
 </div>
 <div class="flex items-center space-x-6">
 <div class="hidden sm:flex items-center bg-white/10 backdrop-blur px-4 py-1.5 rounded-full border border-white/20 text-sm font-medium">
-<span class="px-2 text-primary font-bold">English</span>
+<button class="lang-switcher-btn px-2 text-primary font-bold transition-colors focus:outline-none" data-lang="en" onclick="changeLanguage('en')">English</button>
 <span class="w-px h-3 bg-white/20 mx-1"></span>
-<button onclick="showLanguageToast('French')" class="px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none">French</button>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="fr" onclick="changeLanguage('fr')">French</button>
 <span class="w-px h-3 bg-white/20 mx-1"></span>
-<button onclick="showLanguageToast('Persian Dari')" class="px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none">Persian Dari</button>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="da" onclick="changeLanguage('da')">Persian Dari</button>
 <span class="w-px h-3 bg-white/20 mx-1"></span>
-<button onclick="showLanguageToast('Pashto')" class="px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none">Pashto</button>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="ps" onclick="changeLanguage('ps')">Pashto</button>
 </div>
 <div class="flex items-center space-x-4">
 <span class="material-symbols-outlined text-primary cursor-pointer" data-icon="language">language</span>
@@ -137,30 +137,26 @@
 <!-- Mobile Dropdown Menu -->
 <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-on-surface/95 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300">
 <div class="flex flex-col px-8 py-8 space-y-6">
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="index.html">Home</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="vendors.html">Vendors</a>
-<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" href="sponsors.html">Sponsors</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="about.html">About Eid</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="gallery.html">Gallery</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="faq.html">FAQ</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="team.html">Team</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="contact.html">Contact</a>
+<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" href="index.html" data-i18n="nav.home">Home</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="vendors.html" data-i18n="nav.vendors">Vendors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="sponsors.html" data-i18n="nav.sponsors">Sponsors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="about.html" data-i18n="nav.about">About Eid</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="faq.html" data-i18n="nav.faq">FAQ</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="team.html" data-i18n="nav.team">Team</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="contact.html" data-i18n="nav.contact">Contact</a>
 <div class="sm:hidden flex flex-col pt-6 border-t border-white/10 gap-4 mt-2 items-start">
-<span class="text-primary font-bold tracking-widest uppercase text-xs">Language Preference</span>
-<span class="text-primary font-bold">English</span>
-<button onclick="showLanguageToast('French')" class="text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none">French</button>
-<button onclick="showLanguageToast('Persian Dari')" class="text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none">Persian Dari</button>
-<button onclick="showLanguageToast('Pashto')" class="text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none">Pashto</button>
+<span class="text-primary font-bold tracking-widest uppercase text-xs" data-i18n="nav.language">Language Preference</span>
+<button class="lang-switcher-btn mobile-lang-btn text-primary font-bold text-left focus:outline-none" data-lang="en" onclick="changeLanguage('en')">English</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="fr" onclick="changeLanguage('fr')">French</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="da" onclick="changeLanguage('da')">Persian Dari</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="ps" onclick="changeLanguage('ps')">Pashto</button>
 </div>
 </div>
 </div>
 
-<!-- Toast Notification -->
-<div id="language-toast" class="fixed top-24 left-1/2 -translate-x-1/2 bg-white text-on-surface px-6 py-3 rounded-md flex items-center gap-3 shadow-2xl opacity-0 pointer-events-none transition-all duration-300 z-[100] transform scale-95 border border-primary/20">
-    <span class="material-symbols-outlined text-primary">g_translate</span>
-    <span id="toast-message" class="text-sm font-bold font-body">Translation coming soon.</span>
-</div>
-
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const btn = document.getElementById('mobile-menu-btn');
@@ -171,19 +167,6 @@
             icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
         });
     });
-
-    window.showLanguageToast = function(lang) {
-        const toast = document.getElementById('language-toast');
-        const msg = document.getElementById('toast-message');
-        msg.textContent = `${lang} translation is currently in progress.`;
-        toast.classList.remove('opacity-0', 'scale-95');
-        toast.classList.add('opacity-100', 'scale-100');
-        
-        setTimeout(() => {
-            toast.classList.remove('opacity-100', 'scale-100');
-            toast.classList.add('opacity-0', 'scale-95');
-        }, 3000);
-    }
 </script>
 </nav>
 <main class="pt-32 pb-20">
