@@ -87,12 +87,12 @@
 </head>
 <body class="bg-alabaster-cream font-body text-on-surface">
 <!-- Top Navigation -->
-<nav class="bg-on-surface text-background sticky top-0 z-50 w-full">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<nav class="bg-on-surface text-background sticky top-0 z-50 w-full relative">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto relative z-10">
 <div class="flex items-center">
 <img alt="Freshta Gold Logo" class="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhjluz-_6WsWoVETj031mE58Xu8VM7oe1Pt1yHj3oEf3pQrXIqVZj-94XKDTTLRUj5IAps5MzNBXZClE0PDRIduadgyP_tZ8Dfedo_O0gdEAuwRTPy3vm0pyuBd0nCLQuYrPcOhsXrDsnjVH7Z2ZDXzzOByWAa1f8pzQ0UPEATvdpc41f74Wzi006eD-u_dUP2ewQpZEuNqr5mYdeKcdAn35ThGgsP6q00SUNJOuprX1VzDylgtIkVD6VzDqpxQqCBC40Ph4x7R6A" style="filter: brightness(0) saturate(100%) invert(75%) sepia(35%) saturate(544%) hue-rotate(3deg) brightness(91%) contrast(85%);"/>
 </div>
-<div class="hidden md:flex items-center space-x-8">
+<div class="hidden lg:flex items-center space-x-8">
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="index.html">Home</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="vendors.html">Vendors</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300" href="sponsors.html">Sponsors</a>
@@ -112,11 +112,43 @@
 </div>
 <div class="flex items-center space-x-4">
 <span class="material-symbols-outlined text-primary cursor-pointer" data-icon="language">language</span>
-<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
-<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="person">person</span>
+<button id="mobile-menu-btn" class="lg:hidden text-primary focus:outline-none flex items-center">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 </div>
 </div>
+
+<!-- Mobile Dropdown Menu -->
+<div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-on-surface/95 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300">
+<div class="flex flex-col px-8 py-8 space-y-6">
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="index.html">Home</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="vendors.html">Vendors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="sponsors.html">Sponsors</a>
+<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" href="about.html">About Eid</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="gallery.html">Gallery</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="faq.html">FAQ</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="team.html">Team</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors pl-4 text-xl" href="contact.html">Contact</a>
+<div class="sm:hidden flex flex-col pt-6 border-t border-white/10 gap-4 mt-2">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Language Preference</span>
+<span class="text-background opacity-80">Pashto</span>
+<span class="text-background opacity-80">Dari</span>
+<span class="text-background opacity-80">English</span>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    });
+</script>
 </nav>
 <main class="pt-32 pb-20 hero-pattern">
 <!-- Hero Section -->
