@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "pomegranate": "#9B1C26",
+              "emerald": "#1E5939",
+              "freshta-gold": "#C8A96B",
+              "onyx-black": "#111111",
+              "alabaster": "#FBF8F1",
+              "outline": "#7f7668",
+              "on-tertiary-container": "#0b4b2c",
+              "surface-container": "#f0eee7",
+              "secondary": "#9b1c26",
+              "surface-variant": "#e5e2db",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e5e2db",
+              "surface": "#fbf8f1",
+              "primary-container": "#c8a96b",
+              "secondary-fixed": "#ffdad8",
+              "tertiary": "#1e5939",
+              "secondary-container": "#fe6667",
+              "on-secondary-container": "#69000f",
+              "on-tertiary-fixed-variant": "#145132",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#8e111e",
+              "on-tertiary-fixed": "#002110",
+              "tertiary-container": "#7eba93",
+              "on-primary-container": "#533d09",
+              "background": "#FBF8F1",
+              "tertiary-fixed": "#b3f1c6",
+              "surface-dim": "#dcdad3",
+              "outline-variant": "#d0c5b5",
+              "inverse-primary": "#e3c282",
+              "tertiary-fixed-dim": "#97d4ab",
+              "primary-fixed-dim": "#e3c282",
+              "on-primary-fixed-variant": "#5a430f",
+              "primary": "#c8a96b",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#735b25",
+              "surface-container-high": "#ebe8e1",
+              "on-surface": "#111111",
+              "on-primary": "#111111",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fbf8f1",
+              "on-secondary-fixed": "#410006",
+              "secondary-fixed-dim": "#ffb3b0",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f6f3ec",
+              "inverse-on-surface": "#f3f0ea",
+              "on-secondary": "#ffffff",
+              "on-background": "#111111",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdea0",
+              "on-surface-variant": "#4d463a",
+              "on-primary-fixed": "#261a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(#c8a96b 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.1;
+        }
+        .editorial-shadow {
+            box-shadow: 0 32px 64px -12px rgba(17, 17, 17, 0.06);
+        }
+        .corner-flourish {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-style: solid;
+            pointer-events: none;
+        }
+        .corner-tl { top: 0; left: 0; border-width: 2px 0 0 2px; }
+        .corner-br { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+    </style>
+</head>
+<body class="bg-alabaster text-on-background font-body">
+<!-- TopNavBar: Onyx Black background -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-onyx-black border-b border-freshta-gold/20 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<!-- Logo: Freshta Gold -->
+<div class="text-2xl font-serif text-freshta-gold tracking-tight">Afghan Eid Bazaar</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300 text-sm font-medium" href="#">Marketplace</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300 text-sm font-medium" href="#">Cultural Gallery</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300 text-sm font-medium" href="#">Live Events</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300 text-sm font-medium" href="#">About Eid</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center gap-4 text-xs font-bold tracking-widest uppercase text-freshta-gold">
+<span class="cursor-pointer hover:text-white transition-colors">Pashto</span>
+<span class="w-px h-3 bg-freshta-gold/30"></span>
+<span class="cursor-pointer hover:text-white transition-colors">Dari</span>
+</div>
+<div class="flex items-center gap-4 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="person">person</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="px-8 max-w-screen-xl mx-auto mb-24 relative">
+<div class="absolute inset-0 hero-pattern pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<span class="text-pomegranate font-bold tracking-[0.3em] uppercase text-xs mb-4">Our Benefactors</span>
+<h1 class="font-headline text-5xl md:text-7xl text-onyx-black mb-8 max-w-4xl leading-tight">
+                    Celebrating the Hands that <span class="text-pomegranate italic">Uphold Heritage</span>
+</h1>
+<p class="text-on-surface-variant max-w-2xl text-lg leading-relaxed mb-10">
+                    The Afghan Eid Bazaar is made possible through the generous support of our partners who believe in the power of cultural preservation and community artisanry.
+                </p>
+<!-- CTA Area with brand color theme -->
+<div class="relative p-1">
+<div class="corner-flourish corner-tl border-pomegranate"></div>
+<div class="corner-flourish corner-br border-pomegranate"></div>
+<button class="bg-pomegranate text-white px-10 py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-emerald transition-all flex items-center gap-3 editorial-shadow">
+                        Become a Sponsor
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Diamond Partners: Pomegranate Theme -->
+<section class="px-8 max-w-screen-2xl mx-auto mb-32">
+<div class="flex items-center gap-6 mb-12">
+<h2 class="font-headline text-3xl text-onyx-black">Diamond Partners</h2>
+<div class="flex-grow h-px bg-pomegranate/20"></div>
+<span class="text-pomegranate material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Main Sponsor Card -->
+<div class="md:col-span-8 bg-white p-12 relative overflow-hidden group border border-pomegranate/5">
+<div class="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-pomegranate/20"></div>
+<div class="absolute top-0 right-0 p-8">
+<span class="text-pomegranate/10 font-headline text-9xl select-none">01</span>
+</div>
+<div class="relative z-10 flex flex-col justify-between h-full">
+<div>
+<div class="w-24 h-24 mb-8 bg-alabaster p-4 rounded-full flex items-center justify-center border border-pomegranate/10">
+<img alt="Kabul Global" class="w-full h-full object-contain" data-alt="minimalist modern corporate logo for a global logistics company in gold and charcoal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDU73oLDV74HbaU4l1puUfifPj8LTSsyY0qolGIjf6nmGKAXzM9YwGBLocGU2NeiszyjEerikyflD39eVY_kX075v5y8pD0SzUetbyIaC0o_ijbBVX8WpQzo_LnTXKXecLR_HrElLVIREd42QhYt22Nt3YgMJEialxj34Fk-ejK1NYf92_bkRtl-k9czgWxjtnw-77RCvyCu4XJ6JeUzgmzyKgNedmWI8oin7ivMsYvzC6MXZdCyNc8fu-AlCTBngqS0Dt3c2n1DQ"/>
+</div>
+<h3 class="font-headline text-4xl mb-4 text-onyx-black">Kabul Global Logistics</h3>
+<p class="text-on-surface-variant max-w-md mb-8">Supporting the journey of Afghan craftsmanship across continents, ensuring every piece of heritage reaches its new home safely.</p>
+</div>
+<div class="flex gap-4">
+<span class="bg-pomegranate/10 text-pomegranate px-4 py-1 text-xs font-bold uppercase tracking-widest">Lead Partner</span>
+<span class="bg-pomegranate text-white px-4 py-1 text-xs font-bold uppercase tracking-widest">5 Year Supporter</span>
+</div>
+</div>
+</div>
+<!-- Secondary Diamond Card -->
+<div class="md:col-span-4 bg-pomegranate text-white p-12 flex flex-col justify-end relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<img alt="Background Texture" class="w-full h-full object-cover" data-alt="delicate afghan textile pattern with intricate embroidery and geometric shapes in deep red" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLRfUqljWklmY7ECOGZ87PmJqe67Q01cWNlDx_-Z5SH2XV_e9E0ykrAdBgNAizt5Ibv_jIHRZS44V-Xig1KBCcPCFGTmTl0ei3zFHtORaG6x8S1ZhFfgkDH1SOvcdZLhKo0-nIMIMkRjSlnuEEpW8O26LqV82NZ9X0jkcf1eWU0onQjdqGe8hdsemXoOygWlB0pwCohbWcOoBwhMtyUkZAvZnLu1JLj0GX5mb0-yIbyLaFt7GjgzJElM35yaFVEA9GON29hqJw3QU"/>
+</div>
+<div class="relative z-10">
+<div class="w-20 h-20 mb-6 bg-white p-4 rounded-full shadow-lg">
+<img alt="Aryana" class="w-full h-full object-contain" data-alt="elegant jewelry brand logo featuring a stylized lapis lazuli stone shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtUwGoR0XTQ9Kdyp3CVEHk8MH3Kq-95f69dcGiGQPGeI9GIPFxbeozOdbP435oN4yh20QosCbLveIt-NalzWzI0COAoPcJxCnAawGTTtpApzrFO8m86lRQdbIVfygTNXfxJYCC2aTn7JttUP9LtKVZFxsC1fYIARSPm4-13NyU1fsejzdsLu7NyUfQ1xbxV9XNWfcrJl9jAwxRvu1iSnjyfEa7aefZfMb4rk6klmESiwNe5IEv5tW49xTzAQ_wIwgtB_chdXNTy_A"/>
+</div>
+<h3 class="font-headline text-3xl mb-4">Aryana Heritage Foundation</h3>
+<p class="text-white/80 text-sm mb-6">Dedicated to the preservation of traditional Afghan jewelry making and lapidary arts.</p>
+<a class="inline-flex items-center gap-2 text-freshta-gold font-bold text-sm tracking-widest uppercase hover:text-white transition-colors" href="#">
+                            View Mission
+                            <span class="material-symbols-outlined text-xs" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Cultural Guardians: Emerald Theme -->
+<section class="bg-surface-container-highest/30 py-24 mb-32 relative">
+<div class="px-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-[2px] bg-emerald"></div>
+<span class="text-emerald font-bold tracking-widest uppercase text-xs">Cultural Guardians</span>
+</div>
+<h2 class="font-headline text-4xl text-onyx-black">Preserving the <span class="text-emerald italic">Legacy of the Silk Road</span></h2>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm border-l-2 border-emerald pl-6">Our guardians provide the essential funding for cultural workshops, live performances, and artisan training programs.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Guardian Card 1 -->
+<div class="bg-white p-8 border-t-4 border-emerald editorial-shadow relative group overflow-hidden">
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald/10"></div>
+<img alt="Zeba" class="mb-8 h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all" data-alt="fashion brand logo with calligraphic elements and modern serif type" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAScCwN6xAVNxiJszJFiKUM-Ba1JLZ2F8jlj1B1ljHmgHvy5NgNdfgt3hLN6AJ7tnecNLCBS3zbJo4Kt5R4YKZzaDoJoIzhPJGR1MGUHB2kLhlbOeY-zIF8IgzarxibuqLM0IT1MmS2TynJHmMKmQfGhmjF0OIrqYPr4WxrTdFLh7-GZviReSZAnDuS_7A0NHIwSuGAIEUlgDvVPdmKFTCdOL9Bvw2s7hda8cmwMaT3PKyLu7V7q_xoP_XGjPEmT_avjUSBSakHquE"/>
+<h4 class="font-bold text-lg mb-2 text-onyx-black">Zeba Collections</h4>
+<p class="text-on-surface-variant text-sm mb-6">Promoting contemporary Afghan fashion through global retail channels.</p>
+<div class="flex items-center gap-2 text-emerald">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs font-semibold uppercase tracking-tighter">Dubai, UAE</span>
+</div>
+</div>
+<!-- Guardian Card 2 -->
+<div class="bg-white p-8 border-t-4 border-emerald editorial-shadow relative group overflow-hidden lg:mt-8">
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald/10"></div>
+<img alt="Silk" class="mb-8 h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all" data-alt="luxury travel agency logo with a minimalist silk thread graphic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqNH-Apg14My70Prfgu_kjvU7EhWZ-_BO_7nI-3394cuTFLkpO9-5z2njGi_BA022McCfVXhLqKiufUDj90zyV-1ngGVNV4zIgkkkUzd2HBY1jK0lB3ljdsd_Or72DuV5hSqEdGXIbCu228-SrY8Vf3BS1WS1cpdzhxJuXty402fC8pIa-nBZfaEgJF_cTq01zDo9AN-K2njSmB3NSxO84xztl26mfGFjiOz480fLY23jtsNif-jEPxLPhFBCi5JpbV9V8l1Ugl_w"/>
+<h4 class="font-bold text-lg mb-2 text-onyx-black">Silk Road Travels</h4>
+<p class="text-on-surface-variant text-sm mb-6">Connecting culture seekers with the hidden gems of Central Asia.</p>
+<div class="flex items-center gap-2 text-emerald">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs font-semibold uppercase tracking-tighter">London, UK</span>
+</div>
+</div>
+<!-- Guardian Card 3 -->
+<div class="bg-white p-8 border-t-4 border-emerald editorial-shadow relative group overflow-hidden">
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald/10"></div>
+<img alt="Lapis" class="mb-8 h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all" data-alt="mining and gemstone export logo with geometric crystal shapes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3q5g0o2xWNF51Gl5fXcfA8WhMrJt7VbXZ5MkTQWc511wRTY0fdj1HkObZPL7l-uZ-NmpFXk1pc2RWywm0ZrwLzsn1r30G9_YQEQUJEsI_lDvHDxIMUgObVcDOGr6PUAFL1uTC4I6qxkhAJuIKPNw7dCionVaoZHum05ENZk-aSyiN4oTTJJd_G0OuGyLk-MzME7Sefg9-rqw7KmwiQaiDJOnQdSA_3AJAR_oHrfrzxJXAi0taDZdenPSwk8CBYc-QZ4-cGuzBST4"/>
+<h4 class="font-bold text-lg mb-2 text-onyx-black">Lapis Blue Corp</h4>
+<p class="text-on-surface-variant text-sm mb-6">Sustainable sourcing of Afghanistan's legendary semi-precious stones.</p>
+<div class="flex items-center gap-2 text-emerald">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs font-semibold uppercase tracking-tighter">Kabul, AF</span>
+</div>
+</div>
+<!-- Guardian Card 4 -->
+<div class="bg-white p-8 border-t-4 border-emerald editorial-shadow relative group overflow-hidden lg:mt-8">
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-emerald/10"></div>
+<img alt="Tea" class="mb-8 h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition-all" data-alt="artisanal tea brand logo featuring a stylized pomegranate flower" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFWqw_qDKMVxvq-2jYMvnkPRdYJ8r3SNaAE7WumIkodDJhj23RjumR_NsT_idZd5nXl04KjDZ0wr75yuyhQU2-YlxhRyfRopjCKEqbVzj4_wd4sr9q9-qrcqGYmUOg0eoIS7Go1O5v03_flHiZZy3FOUd0_VBmIUaLNyYLvnhhx3FyGcQlkvV7iBAMnKQBpmV2MPKLHkZzx6EZJ1rv3OpqoP9CcSSgog_VcGw4mW1plpTdQiVgqfbbuPwRlXdn2ELiY_hMIioMxTw"/>
+<h4 class="font-bold text-lg mb-2 text-onyx-black">Balkh Tea Merchants</h4>
+<p class="text-on-surface-variant text-sm mb-6">Purveyors of fine Afghan saffron and herbal tea blends.</p>
+<div class="flex items-center gap-2 text-emerald">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+<span class="text-xs font-semibold uppercase tracking-tighter">Toronto, CA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Sponsors: Minimalist Grid -->
+<section class="px-8 max-w-screen-xl mx-auto mb-32">
+<div class="text-center mb-16">
+<span class="text-emerald font-bold tracking-widest uppercase text-xs mb-4 block">Community Sponsors</span>
+<h2 class="font-headline text-3xl text-onyx-black">Grassroots Support</h2>
+<div class="w-24 h-px bg-pomegranate mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 items-center opacity-60">
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="simple typographic logo for a local community bank" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo8dqLwOOFUWpEWxIgML5OFGdBEYTPvLcWgJOIrZWQ_4wS4I1g9E1RDkJ2u3cf0S-jjsAgtr-bYr2sI_ZhrTeZTdqgrT0hcwDCReZyls6IF5NMf-_z37KQrgRb8ZM3jm0H0PlBnErHPJsoFPSSLNsweIdmfRpUms1lfa7HKr9m8zoi1uWctnkOTXp5MoLqZZWZd3kFmGb0T3GEnB-lhTNDtZagOuzEINm13euPYe40Q_O-tC4sBIYyBNPPdgDgBFjdFK9Lk2iYXkk"/>
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="clean logo for a non-profit education initiative" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmyvqv6yhU01K220xKae3nkcxuzM9KFiOXx4tothQCs21rrEXTb3IqMOxoZXt0NwLuAyrTWcX8V9Uf_2YY6vcCO2QW3wH0x36LUsd-N0n_YiRGd9jL9sKmPjhrsEuVYTBGmLqTgI1dBQtYkQjW_Az8dNJ8Vlo79rsEo_7vF2jnd-blqN6LEt-hg72yrTVY-RLFmVkefMF0e2urKSishlBYYzbk6dYkBH6RhHCTYvcT3moMk92d6AnIPYzPLkuJfu-hmJSYCPAxGO0"/>
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="circular emblem for a regional artisan cooperative" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXLiTBFhls5RS1c2nuhpYcM7KZXDeTL01QKudGyF_XaT931JNSsesU4BtMJNRI7DCifq2TereXSVIxZpMn20e0-cHc3i1nzSx2IOPAhbKStEdo-pcdCvJku9U-cmvk5CMv6QUGiRtQf8srkQjcH1_3j3ZVeqOlEab0iLvuZT8_x6KeHA2ungThGbuLR3X9Rgy8jAZkTP1kPnZXGVRNF0y-UzAV8pFAYSXio2wBoeUSoIBYAWsmDNZA4zJxXEk_Wf4xQy70hIC-DE0"/>
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="modern tech logo for a digital marketing agency" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC9zv_XNL47DrV5KXYCMKg4fAeBwpgOckygorqbduDWXDqKGuKUlkJoNjU3lOtGBguYdBNyuqWAh5Bk1CgYBnhrJzMmB-teb7ufbl6tg94avPp5Ec3U60Dh-sE7rrvktr-KVlhC8kRKEZ8b-ISaHWIFQ7qRc4ZaRbAli507BdrjEG_Ep2NTo5HNY3Q_oZZicQ25tGaqCQgJR8lKjHb3HrrTB8wyeI6X_caBxFDq9S9MJQHiqdGO4zG4X6oEDSxLUJy-uQosdavCfg"/>
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="hand-drawn style logo for a local bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ_hFoZlPqYs13ieun-VURcMaKDYu-DfxF-zkf-7eO3qgXJ_vsQU3pIkI8qa2kNI-xJsWY6cl89muFev_R1LnWE2NUukf8-biyEK1xALZpXIBywefsURR5LFhjbtdsI9P3Sd1sWvVFWt0XpmYyqlB-0mckw5k7CvtJmevupNSE7Nia_5UrW-6Q3YeMGVivH6hbEI0cszcf1One47OFWtH63prRvZ9fGj7v4i6AuAnb9fK0MVVsFWfCEQd32Sc-MmPduKpoSFWA7Hk"/>
+<img alt="Sponsor" class="h-8 w-auto mx-auto object-contain grayscale hover:grayscale-0 transition-all" data-alt="minimalist logo for a sustainable packaging company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd3qZQJU_NVrcT5K6frEvc7bB8dBRhBBdN7bdy3UwGym_-Aa--prH72VHBQvlIaKzfmhulyo6JTmchFkANNhGuAKXPZSfbjSVzuWDKJrAmqwNfSm7HEetX6DGWcQXsIpuRo08QgqFNr03XapXT3frVA0fu9ZGKwmPPsmMZI392Mc0JSckb7hQ1ZkYGQhxV-r44MRs29xxVdzhC7YWUFwElURpf9B7a37rFaDUXDjMto2P8jmm-9M4ntS1K1XhLRvUQdPUMwqajiCU"/>
+</div>
+</section>
+<!-- CTA Section: Emerald Theme -->
+<section class="px-8 max-w-screen-xl mx-auto">
+<div class="relative rounded-xl overflow-hidden p-12 md:p-24 text-center editorial-shadow">
+<div class="absolute inset-0 bg-emerald">
+<img alt="Background" class="w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="close-up of vibrant spices in wooden bowls at a traditional market with dramatic overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8nRov4lumNhMMFTKwxupJgpf2guHx91WmZfJRZk5nbOJN_WDn0_yBlpvHTnPBlyqa2anhefWctwgJz4bz9niIO298t0la18x-I7imSB188bE4urFn1TxzFtqdhDkOtXHYAvfHasBqyuI-TddrOKUej8edLOyZuq-f5dLIEskl9NZIk2yNcvQ1PYqTvOK3k8eeGlWUgtyEP3VbiKLfKhTobW3WDrCKWc3OBhJk3aRLkbWgD-nYjynfVYKKtcuyH8mGEEIW0i5FN_4"/>
+</div>
+<div class="absolute inset-0 border-8 border-pomegranate/20 pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl text-white mb-8">Ready to Join the Bazaar?</h2>
+<p class="text-white/80 max-w-2xl mx-auto mb-12 text-lg">Download our 2024 Sponsorship Prospectus and discover how your organization can contribute to the most vibrant cultural event of the year.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="bg-freshta-gold text-onyx-black px-10 py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-white transition-all shadow-xl">Download Prospectus</button>
+<button class="bg-white/10 backdrop-blur text-white border border-white/20 px-10 py-4 rounded-md font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all">Contact Us Directly</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Onyx Black with Freshta Gold logo -->
+<footer class="bg-onyx-black text-freshta-gold font-body border-t border-freshta-gold/10">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 mt-20 max-w-screen-2xl mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-serif text-freshta-gold mb-6">Afghan Eid Bazaar</div>
+<p class="text-alabaster opacity-70 max-w-xs text-sm leading-relaxed font-body">
+                    A heritage curator experience dedicated to showcasing the timeless beauty of Afghan arts, crafts, and festive traditions.
+                </p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-sm font-bold uppercase tracking-widest text-freshta-gold">Explore</span>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Marketplace</a>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Artists</a>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Cultural Gallery</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-sm font-bold uppercase tracking-widest text-freshta-gold">Links</span>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Privacy Policy</a>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Terms of Service</a>
+<a class="text-alabaster opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all text-sm" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-sm font-bold uppercase tracking-widest text-freshta-gold">Social</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-white" data-icon="public">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-white" data-icon="share">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-white/5 max-w-screen-2xl mx-auto text-center md:text-left">
+<p class="text-alabaster opacity-50 text-xs">© 2024 Afghan Eid Bazaar. A Heritage Curator Experience.</p>
+</div>
+</footer>
+</body></html>

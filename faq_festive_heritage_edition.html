@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "pomegranate": "#C0392B",
+              "emerald": "#27AE60",
+              "freshta-gold": "#C8A96B",
+              "onyx-black": "#1A1A1A",
+              "alabaster-cream": "#F9F8F4",
+              "outline": "#7f7668",
+              "on-tertiary-container": "#0b4b2c",
+              "surface-container": "#f0eee7",
+              "secondary": "#b02c33",
+              "surface-variant": "#e5e2db",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e5e2db",
+              "surface": "#fcf9f2",
+              "primary-container": "#c8a96b",
+              "secondary-fixed": "#ffdad8",
+              "tertiary": "#306948",
+              "secondary-container": "#fe6667",
+              "on-secondary-container": "#69000f",
+              "on-tertiary-fixed-variant": "#145132",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#8e111e",
+              "on-tertiary-fixed": "#002110",
+              "tertiary-container": "#7eba93",
+              "on-primary-container": "#533d09",
+              "background": "#F9F8F4",
+              "tertiary-fixed": "#b3f1c6",
+              "surface-dim": "#dcdad3",
+              "outline-variant": "#d0c5b5",
+              "inverse-primary": "#e3c282",
+              "tertiary-fixed-dim": "#97d4ab",
+              "primary-fixed-dim": "#e3c282",
+              "on-primary-fixed-variant": "#5a430f",
+              "primary": "#735b25",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#735b25",
+              "surface-container-high": "#ebe8e1",
+              "on-surface": "#1c1c18",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fcf9f2",
+              "on-secondary-fixed": "#410006",
+              "secondary-fixed-dim": "#ffb3b0",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f6f3ec",
+              "inverse-on-surface": "#f3f0ea",
+              "on-secondary": "#ffffff",
+              "on-background": "#1c1c18",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdea0",
+              "on-surface-variant": "#4d463a",
+              "on-primary-fixed": "#261a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.39 11.18 5.878 18.09L30 36.18l-15.39 11.18 5.878-18.09L5.1 18.09h19.022L30 0z' fill='%23C8A96B' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        .festive-border {
+            background-image: repeating-linear-gradient(45deg, #C0392B, #C0392B 10px, #27AE60 10px, #27AE60 20px);
+            padding: 4px;
+        }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-alabaster-cream font-body text-on-surface">
+<!-- Top Navigation -->
+<nav class="bg-onyx-black/95 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-freshta-gold/20">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline text-freshta-gold tracking-tight font-bold">Afghan Eid Bazaar</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300" href="#">Marketplace</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300" href="#">Cultural Gallery</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300" href="#">Live Events</a>
+<a class="text-white opacity-80 hover:text-freshta-gold transition-colors duration-300" href="#">About Eid</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex gap-4">
+<button class="text-freshta-gold font-bold text-sm tracking-widest uppercase">Pashto</button>
+<button class="text-white opacity-60 text-sm tracking-widest uppercase">Dari</button>
+</div>
+<div class="flex gap-4 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold transition-colors" data-icon="person">person</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 hero-pattern">
+<!-- Hero Section -->
+<header class="max-w-screen-xl mx-auto px-8 mb-20 text-center">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-onyx-black mb-6 leading-tight">
+                Curated <span class="text-freshta-gold">Guidance</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto opacity-80 font-light leading-relaxed">
+                Everything you need to know about the upcoming heritage celebration, vendor opportunities, and cultural experiences.
+            </p>
+</header>
+<!-- Search and Filter -->
+<section class="max-w-4xl mx-auto px-8 mb-16">
+<div class="relative group">
+<input class="w-full bg-white border-none border-b-2 border-outline-variant/40 focus:border-freshta-gold focus:ring-0 py-6 px-4 text-xl font-light placeholder:opacity-40 transition-all duration-500 rounded-t-lg" placeholder="Search for your question..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-freshta-gold scale-125" data-icon="search">search</span>
+</div>
+<div class="flex flex-wrap gap-4 mt-8 justify-center">
+<button class="px-6 py-2 bg-onyx-black text-freshta-gold rounded-full text-sm font-semibold tracking-wide shadow-sm hover:scale-105 transition-transform">General Info</button>
+<button class="px-6 py-2 bg-white border-2 border-emerald text-emerald rounded-full text-sm font-bold hover:bg-emerald hover:text-white transition-all">Vendor Applications</button>
+<button class="px-6 py-2 bg-white border-2 border-pomegranate text-pomegranate rounded-full text-sm font-bold hover:bg-pomegranate hover:text-white transition-all">Cultural Gallery</button>
+<button class="px-6 py-2 bg-white border-2 border-freshta-gold text-freshta-gold rounded-full text-sm font-bold hover:bg-freshta-gold hover:text-white transition-all">Logistics</button>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="max-w-4xl mx-auto px-8 space-y-6">
+<details class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-300" open="">
+<summary class="flex justify-between items-center p-8 cursor-pointer select-none">
+<h3 class="font-headline text-2xl text-onyx-black group-open:text-pomegranate transition-colors">When and where does the bazaar take place?</h3>
+<span class="material-symbols-outlined text-pomegranate group-open:rotate-180 transition-transform duration-500 text-3xl font-bold" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-8 pb-8 pt-0">
+<div class="h-px w-full bg-outline-variant/10 mb-6"></div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1 space-y-4">
+<p class="text-on-surface-variant leading-relaxed opacity-90">
+                                The Afghan Eid Bazaar is held annually at the <strong class="text-emerald">Heritage Pavilion Grounds</strong>. This year's celebration runs from <strong class="text-pomegranate">June 14th to June 16th</strong>.
+                            </p>
+<p class="text-on-surface-variant leading-relaxed opacity-90">
+                                Doors open daily from 10:00 AM until 9:00 PM. We recommend arriving early to experience the morning Sufi music sets.
+                            </p>
+</div>
+<div class="w-full md:w-48 h-32 rounded-lg bg-surface-container overflow-hidden">
+<img alt="map" class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCevHqojKtXBFbtz6k6CO96rwFTp_Rm_pj2vXb_l_wnDi2LVlPqPJWVyndF_UFTtZwtTwCPsTYM4c0I9MQhNnzaNCYKdTdTuq5AOyThkDH4dChKiNx1PgWQYPztr-1v8srjeA2xikuE_tkboCGXp0DGlX7UzYXWU4j4ktp0N7nYpPGonHMDd-aMWrpQHqVxMR9_FKrYuh39HnGeVrECJMKndKmiISnYXoaUmLVji0lycINnWn2gBKh2wbFWERfedcK9iK691rQ3lF0"/>
+</div>
+</div>
+</div>
+</details>
+<details class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-300">
+<summary class="flex justify-between items-center p-8 cursor-pointer select-none">
+<h3 class="font-headline text-2xl text-onyx-black group-open:text-emerald transition-colors">Is there an entry fee?</h3>
+<span class="material-symbols-outlined text-emerald group-open:rotate-180 transition-transform duration-500 text-3xl font-bold" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-8 pb-8 pt-0">
+<div class="h-px w-full bg-outline-variant/10 mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed opacity-90">
+                        General admission is free for all attendees to ensure the cultural heritage remains accessible. However, some specialized workshop sessions in the Cultural Gallery and premium seating for the Evening Attan performances require a separate ticket purchase.
+                    </p>
+</div>
+</details>
+<details class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-300">
+<summary class="flex justify-between items-center p-8 cursor-pointer select-none">
+<h3 class="font-headline text-2xl text-onyx-black group-open:text-pomegranate transition-colors">How can I apply to be a vendor?</h3>
+<span class="material-symbols-outlined text-pomegranate group-open:rotate-180 transition-transform duration-500 text-3xl font-bold" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-8 pb-8 pt-0">
+<div class="h-px w-full bg-outline-variant/10 mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed opacity-90 mb-6">
+                        We welcome artisans specializing in traditional Afghan crafts, textiles, and cuisine. Applications are processed through our curated portal.
+                    </p>
+<button class="bg-pomegranate text-white px-8 py-3 rounded-md font-bold tracking-tight shadow-sm hover:translate-y-[-2px] hover:bg-pomegranate/90 transition-all duration-300">
+                        Access Vendor Portal
+                    </button>
+</div>
+</details>
+<details class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-300">
+<summary class="flex justify-between items-center p-8 cursor-pointer select-none">
+<h3 class="font-headline text-2xl text-onyx-black group-open:text-emerald transition-colors">What traditional food will be available?</h3>
+<span class="material-symbols-outlined text-emerald group-open:rotate-180 transition-transform duration-500 text-3xl font-bold" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="px-8 pb-8 pt-0">
+<div class="h-px w-full bg-outline-variant/10 mb-6"></div>
+<div class="grid md:grid-cols-2 gap-4">
+<div class="bg-alabaster-cream p-4 rounded border-l-4 border-emerald">
+<h4 class="font-bold text-emerald mb-1">Authentic Mains</h4>
+<p class="text-sm opacity-80">Kabuli Pulao, Mantu (dumplings), and various artisanal kebabs.</p>
+</div>
+<div class="bg-alabaster-cream p-4 rounded border-l-4 border-pomegranate">
+<h4 class="font-bold text-pomegranate mb-1">Sweet Delicacies</h4>
+<p class="text-sm opacity-80">Sheer Khurma, Firni with rosewater, and traditional saffron tea.</p>
+</div>
+</div>
+</div>
+</details>
+</section>
+<!-- Asymmetric CTA Section -->
+<section class="max-w-screen-xl mx-auto px-8 mt-32">
+<div class="festive-border rounded-2xl">
+<div class="grid md:grid-cols-2 gap-0 items-center bg-onyx-black rounded-xl overflow-hidden">
+<div class="p-12 md:p-20 order-2 md:order-1">
+<span class="text-freshta-gold text-sm tracking-[0.3em] font-bold uppercase block mb-4">Still Curious?</span>
+<h2 class="font-headline text-4xl md:text-5xl text-white mb-8 leading-tight">Can't find what you're looking for?</h2>
+<p class="text-white opacity-70 mb-10 text-lg font-light">
+                            Our heritage curators are available to answer specific questions regarding historical artifacts, family roots, and travel arrangements.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-freshta-gold text-onyx-black font-bold rounded hover:bg-freshta-gold/90 transition-colors gap-2" href="mailto:curator@afghaneidbazaar.com">
+                                Contact a Curator
+                                <span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+<div class="h-[400px] md:h-full relative order-1 md:order-2 overflow-hidden">
+<img alt="heritage curator" class="w-full h-full object-cover scale-110 hover:scale-100 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtC7WoNjMXpxIFvdmHquH72DyevEHN17Pt5JvpzsmNpb4VWmrno7w8xj9Qq1J1AH81BtAWatDJ5LOM_Zi4NnK2gCDLpEeQBQZcxSPiz3o6HL1sX2YaYfepXw6xlKycxVOOIkK4rKVikLi-qXJkL5YBcyaSbkHHz2mWw0v5cpfPFyrMSEEEcvEY7A7UAc2L7fpgHO6sv86LPTMiBINEBac3p5KXKVBwM2Rz1s9NVt8jkuNNhaShxdRvVZfqIFMmWQD4kZfSQrUEf6Y"/>
+<div class="absolute inset-0 bg-gradient-to-r from-onyx-black via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-onyx-black w-full mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-xl font-headline text-freshta-gold font-bold">Afghan Eid Bazaar</div>
+<p class="text-white opacity-70 text-sm">© 2024 Afghan Eid Bazaar. A Heritage Curator Experience.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mt-8 md:mt-0">
+<a class="text-white opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all font-body text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-white opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all font-body text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-white opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all font-body text-sm uppercase tracking-widest" href="#">Cultural Heritage</a>
+<a class="text-white opacity-70 hover:text-freshta-gold hover:opacity-100 transition-all font-body text-sm uppercase tracking-widest" href="#">Contact Us</a>
+</div>
+<div class="flex gap-6 mt-10 md:mt-0">
+<span class="material-symbols-outlined text-freshta-gold cursor-pointer hover:scale-110 transition-transform" data-icon="share">share</span>
+<span class="material-symbols-outlined text-freshta-gold cursor-pointer hover:scale-110 transition-transform" data-icon="mosque">mosque</span>
+<span class="material-symbols-outlined text-freshta-gold cursor-pointer hover:scale-110 transition-transform" data-icon="history_edu">history_edu</span>
+</div>
+</div>
+</footer>
+</body></html>

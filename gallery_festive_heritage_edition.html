@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cultural Gallery | Afghan Eid Bazaar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#7f7668",
+                        "on-tertiary-container": "#0b4b2c",
+                        "surface-container": "#f0eee7",
+                        "secondary": "#9b1c26", /* Pomegranate Red */
+                        "surface-variant": "#e5e2db",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e5e2db",
+                        "surface": "#fcf9f2",
+                        "primary-container": "#c8a96b", /* Freshta Gold */
+                        "secondary-fixed": "#ffdad8",
+                        "tertiary": "#1e5939", /* Emerald Green */
+                        "secondary-container": "#fe6667",
+                        "on-secondary-container": "#69000f",
+                        "on-tertiary-fixed-variant": "#145132",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#8e111e",
+                        "on-tertiary-fixed": "#002110",
+                        "tertiary-container": "#7eba93",
+                        "on-primary-container": "#533d09",
+                        "background": "#fbf8f1", /* Alabaster Cream */
+                        "tertiary-fixed": "#b3f1c6",
+                        "surface-dim": "#dcdad3",
+                        "outline-variant": "#d0c5b5",
+                        "inverse-primary": "#e3c282",
+                        "tertiary-fixed-dim": "#97d4ab",
+                        "primary-fixed-dim": "#e3c282",
+                        "on-primary-fixed-variant": "#5a430f",
+                        "primary": "#c8a96b",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#111111", /* Onyx Black */
+                        "surface-tint": "#c8a96b",
+                        "surface-container-high": "#ebe8e1",
+                        "on-surface": "#111111",
+                        "on-primary": "#111111",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fcf9f2",
+                        "on-secondary-fixed": "#410006",
+                        "secondary-fixed-dim": "#ffb3b0",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f6f3ec",
+                        "inverse-on-surface": "#f3f0ea",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdea0",
+                        "on-surface-variant": "#4d463a",
+                        "on-primary-fixed": "#261a00"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .asymmetric-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+        .festive-frame-red {
+            border: 8px solid #9b1c26;
+            padding: 12px;
+            background: #fbf8f1;
+        }
+        .festive-frame-green {
+            border: 8px solid #1e5939;
+            padding: 12px;
+            background: #fbf8f1;
+        }
+        .glass-nav {
+            background: rgba(17, 17, 17, 0.95);
+            backdrop-filter: blur(24px);
+        }
+        .category-btn {
+            transition: all 0.3s ease;
+        }
+        .category-btn.active {
+            background-color: #1e5939;
+            color: white;
+        }
+        .category-btn:hover:not(.active) {
+            background-color: #9b1c26;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-primary/20">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline text-primary tracking-tight font-bold">
+                Afghan Eid Bazaar
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-white opacity-80 hover:text-primary transition-colors duration-300" href="#">Marketplace</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Cultural Gallery</a>
+<a class="text-white opacity-80 hover:text-primary transition-colors duration-300" href="#">Live Events</a>
+<a class="text-white opacity-80 hover:text-primary transition-colors duration-300" href="#">About Eid</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex space-x-4 text-sm font-label uppercase tracking-widest text-primary">
+<button class="hover:text-secondary transition-colors">Pashto</button>
+<span class="opacity-30">|</span>
+<button class="hover:text-secondary transition-colors">Dari</button>
+</div>
+<div class="flex items-center space-x-4 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">person</span>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-8 max-w-screen-2xl mx-auto">
+<!-- Filter Bar -->
+<div class="flex flex-wrap gap-4 mb-16 justify-center">
+<button class="category-btn active px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider">All Heritage</button>
+<button class="category-btn px-6 py-2 rounded-full border border-outline/30 font-label text-sm uppercase tracking-wider">Textiles</button>
+<button class="category-btn px-6 py-2 rounded-full border border-outline/30 font-label text-sm uppercase tracking-wider">Ceramics</button>
+<button class="category-btn px-6 py-2 rounded-full border border-outline/30 font-label text-sm uppercase tracking-wider">Culinary</button>
+<button class="category-btn px-6 py-2 rounded-full border border-outline/30 font-label text-sm uppercase tracking-wider">Landscapes</button>
+</div>
+<!-- Hero Section -->
+<section class="mb-32 relative">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<span class="text-secondary font-label tracking-[0.3em] uppercase mb-4 block">Visual Archive</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-tight mb-8">
+                        The <span class="text-primary italic">Heritage</span> Curator
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-md leading-relaxed">
+                        A digital sanctuary celebrating centuries of Afghan craftsmanship, festive tradition, and the vibrant spirit of Eid gatherings.
+                    </p>
+</div>
+<div class="md:w-1/2 festive-frame-red group overflow-hidden shadow-2xl">
+<div class="relative h-[500px] w-full overflow-hidden">
+<img alt="Main Archive Hero" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" data-alt="Close-up of intricate hand-woven Afghan carpet with rich red and gold geometric patterns in soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_SyQK1qmi2BgXdUcjn-Hof00ild3GwpAWRmNb0c5kyIk8-iyDsBKLcGcS0V7A0BXWfOhmtdbigNkl5Sx7gmJflZHp9Dl-5MT2tEFq8LWb8e6U3oDKZ_um7m6mKnxH6cLWCk6ohJfWnvCQenA9L5bOIxZJ8ZVuatDQhC-A177EFFwqx4ueMQNp2-6tP6TSGd4SbrXSQQKT6Nir4R4SDwp74cBbanWm4jvi-5j8xKmxXSyLQMkuitEiWCWSk4HQsWuNeiIrwWYQCu4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Grid: Asymmetric Bento Style -->
+<section class="asymmetric-grid mb-40">
+<!-- Item 1: Large Featured -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden festive-frame-green shadow-xl h-[600px]">
+<div class="w-full h-full overflow-hidden relative">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000" data-alt="Traditional Afghan family gathering around a large feast table decorated with pomegranate and fresh bread during Eid celebration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeTU8q6HLCEiLhAVVByR2jnl-ZrdK9hhwb6mbTdLRJkt-TBFmj-doypBh8KJ3cIJ17snLvxg5a8mepbKYqs3VnkNLx2slaICszxl6eOrL9FnjeqZdViCSz_aO69xp1Umn2eVUOyET7VG1t1_UTgR8E37WRGsnBD16ky-jHME_QOPle2rWwTgX6e-twZvU_QzP4A4o32PqZEH0PMdKRqAV5_7IPqoG6LReRgK_O1OEnxGvIbaOiS8eneV75Pc1f6zfbpz31TnoSFPE"/>
+<div class="absolute bottom-0 left-0 p-12 bg-gradient-to-t from-inverse-surface/80 to-transparent w-full">
+<h3 class="text-background font-headline text-3xl mb-2">The Dastarkhwan Tradition</h3>
+<p class="text-background/80 font-body max-w-lg">Capturing the warmth of hospitality and the bounty of the festive table.</p>
+</div>
+<div class="absolute top-8 right-8 bg-secondary text-on-secondary px-4 py-1 text-xs font-label uppercase tracking-widest">Featured</div>
+</div>
+</div>
+<!-- Item 2: Vertical Portrait -->
+<div class="col-span-12 md:col-span-4 flex flex-col justify-center border-l-4 border-secondary pl-8">
+<div class="mb-8 aspect-[3/4] overflow-hidden festive-frame-red shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Portrait of an elderly Afghan craftsman working on intricate silver jewelry with traditional tools in a sunlit workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaBhVfjpN2xBs1NDNpUidXOyfTptugi9ndB6Ipf2ribbgYe-zTlJ_6nKZQHdfzjo8R2hND8pGgZvBFirzcPhW0Crmm_FePN_B0Cw__-Xk4sztaMtnr83Ceszpn_7K94hO8dPtyVtMwKB0mJshJ2IvbZj5W9HWUMrQvwL8SYP782W046f6LkF-BZDPiNrT4ba0f5m53yIrGyna7HEw_Hs48TY3W1RlqY5y2ST2-m1TInXL-QQ9-_S28_FnsnXWQMpgIcz886atFqL4"/>
+</div>
+<h4 class="font-headline text-2xl mb-4">Artisans of Kabul</h4>
+<p class="text-on-surface-variant leading-relaxed mb-6">Honoring the master silversmiths who preserve the aesthetic of the Silk Road.</p>
+<a class="text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-2" href="#">
+                    Discover Stories <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Item 3: Square Detail -->
+<div class="col-span-12 md:col-span-4 relative group">
+<div class="aspect-square overflow-hidden mb-6 festive-frame-green shadow-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-all duration-500" data-alt="Vibrant heap of emerald green and turquoise gemstones on a dark velvet cloth, shimmering under focused warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLOaat1H7x6deElBurzK5rHfAiHaF4vYS6RAGRPvb1mtU5ocHTnJbAbx3c0SzR8LbKY458kkcpbYt_HgGzGUjyVHGcwhmTx2bqUrPj4TLatnq3ds65NORsLME8yzwHpEg-JWMFH27j4_g2y_70WqKWoNOTO2nt820hCLOX-hNDiokMHxVg25Yt5pZ1KgUCOYAOvGh9RGcVPYKnnm3vXIBNlCUt2VgEBhEWHwpZqAKfuLMp_qGPrIF7q8TW6sCQI2B1aOAJFhb3kts"/>
+</div>
+<h4 class="font-headline text-xl mb-2">Lapis &amp; Emerald</h4>
+<span class="text-sm font-label uppercase tracking-wider text-on-surface-variant">Material Studies</span>
+</div>
+<!-- Item 4: Wide Landscape -->
+<div class="col-span-12 md:col-span-8 h-[400px] relative overflow-hidden flex items-center festive-frame-red group shadow-xl">
+<div class="absolute inset-0 w-full h-full overflow-hidden bg-inverse-surface">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity" data-alt="Wide shot of the ancient city of Herat at dusk, blue tiled mosques glowing against a deep orange and purple sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDonDBKTKB3Tw_w6-LnQvoCHTJNtf9U029gPM-OyW3djB3w7Wh_sMyGDMJGqUKxQ_2xdj4CypH7swgWUGf4cHSryLZG4W96kON4W1q_6QFO4S_tnTcUWLYoSD1v1i3dIX5vgIfAdOTi9WOmEtR7jZf6NAZ33HzwnbYj6-Xd2kookJ8SNiuL9ae4fKUbY80aMr8xr6bJF2cKZPCYjeSX7ch-bU7n0I2pFAzRYB4f4uQ94YOO-0xyOZLsTzSyawZWvgem6sA5AqP4efw"/>
+<div class="relative z-10 p-16">
+<h3 class="text-primary text-5xl font-headline mb-6">Herat: The Blue City</h3>
+<p class="text-background max-w-md italic font-light opacity-90">"Where the earth meets the sky in shades of lapis lazuli."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Festive Mosaic Section -->
+<section class="mb-40 py-24 bg-surface-container-low -mx-8 px-8 border-y-8 border-tertiary/10">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-6">Crafted for Celebration</h2>
+<div class="w-24 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Craft Card 1 -->
+<div class="bg-surface p-8 rounded-none shadow-sm hover:shadow-xl transition-shadow festive-frame-red">
+<div class="aspect-video mb-6 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of fine embroidery on a traditional Afghan dress with gold threads and pomegranate red silk accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCriTUdPkwnBh9JufXY74H_vKCOMnhooT46V-C5jm8ol5Ey5FRXr00bX_IXKenwBwfgXdhdg3tqjAW-oJPkE6ieNWXn57Y6Od0uQCKa3U_fXz82l_PcI-1QpPzFZbSXX8Rz7yG913h2RqM-R3YMELqkAXz9w7wdHdMPdP41-ycUgHaW5i824BYJi6qr8hri6Q3zjGiOlquhsYpPHUeJh-1XV-OLP1oR5EqfOypi0oWU8HIYXRa4xNjSDHfOo8tx6-xlR5Y06RXGWQI"/>
+</div>
+<h5 class="font-headline text-xl mb-3">Gold Thread Embroidery</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Intricate needlework passed down through generations of Afghan women.</p>
+<button class="w-full py-3 bg-secondary text-white font-label uppercase tracking-widest text-xs hover:bg-tertiary transition-all">View Detail</button>
+</div>
+<!-- Craft Card 2 -->
+<div class="bg-surface p-8 rounded-none shadow-sm hover:shadow-xl transition-shadow festive-frame-green">
+<div class="aspect-video mb-6 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Handcrafted ceramic bowls with turquoise glaze and geometric hand-painted patterns on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ooMr_mnLNzm2T2NGQ8Mb3G7XKMtjuPKPnRH3S4RKUhGLpYMRWqFce8EXBMq_s1tCVL_hAR_BS4H337HJOw7ei9SCcPgBLTAQzvwlYF5lzZ7ugFjo5wzM-p9VnyT8pOLvVyZHBJaiCkJWuofXYYKtyptf_Gdea0Lyjm4hsXzf9cWcIUe1iM6F50vLFEcRE6GIKs-Oqt1ETQBAfychX13yBuDeh8HyUnrsPVTLUSotgYhJiAddGTizQkY5_lVMB78FsFXxKk0tAsY"/>
+</div>
+<h5 class="font-headline text-xl mb-3">Istali Pottery</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">The signature turquoise glaze that has defined Afghan ceramics for a millennium.</p>
+<button class="w-full py-3 bg-tertiary text-white font-label uppercase tracking-widest text-xs hover:bg-secondary transition-all">View Detail</button>
+</div>
+<!-- Craft Card 3 -->
+<div class="bg-surface p-8 rounded-none shadow-sm hover:shadow-xl transition-shadow festive-frame-red">
+<div class="aspect-video mb-6 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Selection of traditional Afghan dried fruits and nuts arranged in copper bowls on a silk festive cloth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqjCNikGeng4p5BpYtT2TZjHnuFFo04mVcaNy-VrgqfZEWTfZYrsx6qJZaib0jShrVBxwfGAcjBU73I9OoAqsaXXJ0n1cZ8XvpgRDva1ypTVz901f9TsMJRH-oEYBfsifnqXW-AgxAR0PCQ7I9A45n5KkbNDGEPxhX5oJEL12j2rPb2C0bt_GtCTCCjo-Aj19A5rnipBAnSHCbzMfdUs18sNZxVDz6JAlBZQSR297lHwxBu1z_MP961xwWvcrGMd9Be3X734dS6-c"/>
+</div>
+<h5 class="font-headline text-xl mb-3">The Eid Spread</h5>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Showcasing the premium walnuts, almonds, and raisins of the northern valleys.</p>
+<button class="w-full py-3 bg-secondary text-white font-label uppercase tracking-widest text-xs hover:bg-tertiary transition-all">View Detail</button>
+</div>
+</div>
+</section>
+<!-- Textural Callout -->
+<section class="mb-40 text-center max-w-4xl mx-auto px-4">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8">auto_awesome</span>
+<blockquote class="text-3xl md:text-4xl font-headline italic leading-snug mb-8">
+                "Our heritage is not a relic of the past, but a living, breathing tapestry of stories woven into every thread and every spice."
+            </blockquote>
+<p class="font-label text-tertiary tracking-[0.2em] uppercase text-sm">— Afghan Cultural Preservation Society</p>
+</section>
+<!-- Witness it Live Invitation Section -->
+<section class="mb-20">
+<div class="relative overflow-hidden bg-tertiary text-white rounded-none p-12 md:p-24 text-center border-l-[16px] border-secondary">
+<div class="relative z-10">
+<span class="text-primary font-label tracking-[0.3em] uppercase mb-6 block">Join the Celebration</span>
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8">Witness it Live</h2>
+<p class="text-lg opacity-90 max-w-2xl mx-auto mb-10 leading-relaxed font-body">
+                        From live embroidery workshops to virtual tours of the blue mosques, experience the vibrant spirit of Afghan Eid from anywhere in the world.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="px-10 py-4 bg-secondary text-white font-label uppercase tracking-widest text-sm hover:bg-white hover:text-secondary transition-all font-bold">Explore Events</button>
+<button class="px-10 py-4 border-2 border-white text-white font-label uppercase tracking-widest text-sm hover:bg-white hover:text-tertiary transition-all font-bold">Get Notifications</button>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 border-[40px] border-white/5 rounded-full pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-60 h-60 border-[20px] border-secondary/20 rounded-full pointer-events-none"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface border-t-8 border-primary">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-primary font-headline text-2xl mb-4">Afghan Eid Bazaar</div>
+<div class="text-background opacity-70 text-sm max-w-xs leading-relaxed">
+                    Celebrating the soul of Afghanistan through curated experiences and artisanal excellence.
+                </div>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12 mb-8 md:mb-0">
+<a class="text-background opacity-70 hover:text-primary hover:opacity-100 transition-all font-body" href="#">Privacy Policy</a>
+<a class="text-background opacity-70 hover:text-primary hover:opacity-100 transition-all font-body" href="#">Terms of Service</a>
+<a class="text-background opacity-70 hover:text-primary hover:opacity-100 transition-all font-body" href="#">Cultural Heritage</a>
+<a class="text-background opacity-70 hover:text-primary hover:opacity-100 transition-all font-body" href="#">Contact Us</a>
+</div>
+<div class="text-primary text-right">
+<div class="flex space-x-4 justify-end mb-4">
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:scale-110 transition-transform">share</span>
+</div>
+<p class="text-[10px] uppercase tracking-widest font-label text-background opacity-40">
+                    © 2024 Afghan Eid Bazaar. A Heritage Curator Experience.
+                </p>
+</div>
+</div>
+<!-- Bottom Pattern Underlay -->
+<div class="h-2 w-full bg-gradient-to-r from-secondary via-primary to-tertiary"></div>
+</footer>
+</body></html>

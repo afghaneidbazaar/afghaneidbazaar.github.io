@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vendors | Afghan Eid Bazaar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "pomegranate": "#9B1C26",
+              "emerald": "#1E5939",
+              "onyx": "#0F0F0F",
+              "freshta-gold": "#C8A96B",
+              "alabaster": "#F5F2EA",
+              "outline": "#7f7668",
+              "on-tertiary-container": "#0b4b2c",
+              "surface-container": "#f0eee7",
+              "secondary": "#9B1C26",
+              "surface-variant": "#e5e2db",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e5e2db",
+              "surface": "#F5F2EA",
+              "primary-container": "#c8a96b",
+              "secondary-fixed": "#ffdad8",
+              "tertiary": "#1E5939",
+              "secondary-container": "#9B1C26",
+              "on-secondary-container": "#ffffff",
+              "on-tertiary-fixed-variant": "#145132",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#8e111e",
+              "on-tertiary-fixed": "#002110",
+              "tertiary-container": "#1E5939",
+              "on-primary-container": "#533d09",
+              "background": "#F5F2EA",
+              "tertiary-fixed": "#b3f1c6",
+              "surface-dim": "#dcdad3",
+              "outline-variant": "#d0c5b5",
+              "inverse-primary": "#e3c282",
+              "tertiary-fixed-dim": "#97d4ab",
+              "primary-fixed-dim": "#e3c282",
+              "on-primary-fixed-variant": "#5a430f",
+              "primary": "#735b25",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#735b25",
+              "surface-container-high": "#ebe8e1",
+              "on-surface": "#1c1c18",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "surface-bright": "#F5F2EA",
+              "on-secondary-fixed": "#410006",
+              "secondary-fixed-dim": "#ffb3b0",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f6f3ec",
+              "inverse-on-surface": "#f3f0ea",
+              "on-secondary": "#ffffff",
+              "on-background": "#1c1c18",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdea0",
+              "on-surface-variant": "#4d463a",
+              "on-primary-fixed": "#261a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background-color: rgba(15, 15, 15, 0.95);
+            backdrop-filter: blur(24px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c8a96b;
+        }
+        .pattern-border-red {
+            border-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h20v20H0z" fill="none"/><path d="M10 0l10 10-10 10L0 10z" fill="%239B1C26" fill-opacity="0.2"/></svg>') 30 repeat;
+            border-width: 4px;
+            border-style: solid;
+        }
+        .pattern-border-green {
+            border-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h20v20H0z" fill="none"/><circle cx="10" cy="10" r="5" fill="%231E5939" fill-opacity="0.2"/></svg>') 30 repeat;
+            border-width: 4px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body class="bg-alabaster text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/10">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif text-freshta-gold tracking-tight font-headline">
+            Afghan Eid Bazaar
+        </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-freshta-gold font-bold border-b-2 border-freshta-gold pb-1 font-label" href="#">Marketplace</a>
+<a class="text-white opacity-80 hover:text-pomegranate transition-colors duration-300 font-label" href="#">Cultural Gallery</a>
+<a class="text-white opacity-80 hover:text-pomegranate transition-colors duration-300 font-label" href="#">Live Events</a>
+<a class="text-white opacity-80 hover:text-pomegranate transition-colors duration-300 font-label" href="#">About Eid</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex items-center space-x-4 border-r border-white/20 pr-6">
+<button class="text-sm font-label text-white/70 hover:text-freshta-gold transition-colors">Pashto</button>
+<button class="text-sm font-label text-white/70 hover:text-freshta-gold transition-colors">Dari</button>
+</div>
+<div class="flex items-center space-x-4 text-white">
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold" data-icon="language">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-freshta-gold" data-icon="person">person</span>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section -->
+<section class="px-8 py-20 max-w-screen-2xl mx-auto relative overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<span class="text-pomegranate font-bold tracking-widest uppercase text-xs mb-4 block">The Artisans of the Silk Road</span>
+<h1 class="font-headline text-6xl md:text-8xl text-on-surface mb-8 leading-tight tracking-tighter">
+                    Curated <span class="text-emerald italic">Craftsmanship</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                    Discover the souls behind the heritage. From the vibrant looms of Herat to the silver workshops of Kabul, we present Afghanistan's finest masters of craft.
+                </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container relative overflow-hidden rounded-sm">
+<img alt="Artisan at work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuscpIYajTNtxUyCkJ0Xnu8VBEIoRiaZ2PiGV-gI56h81fJ5e6T4FyWOxsOBYf9dqcoTtqaUz946NBF936zdWRU1cCfD93WmDGCCWvSCu6cSJIJEfCrTqdOYy4a-2GolTNirl8gYcloZkGIq5oLM1A-aPYWzWcuLXjikQodAz97-6mpwVEvXAqjS_DVRIkVvAwfR1PGL6ehSfW_IEYEwsHgO4Bd37eWfupaH5CpHAqXZ9gjjI9w4re166JnH4Y5fOuxR58WfyhS4E"/>
+<div class="absolute inset-0 border-[12px] border-emerald/20 pointer-events-none"></div>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-emerald p-8 text-white max-w-[200px] shadow-xl">
+<p class="font-headline italic text-lg leading-tight">"Every knot tells a thousand year story."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Filter Bar -->
+<section class="sticky top-[88px] z-40 bg-alabaster/90 backdrop-blur-md px-8 py-6 border-y border-emerald/10">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-6 items-center justify-between">
+<div class="relative w-full md:w-1/2">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-emerald" data-icon="search">search</span>
+<input class="w-full bg-white border-b-2 border-emerald/20 focus:border-emerald px-12 py-3 focus:outline-none focus:ring-0 transition-all font-body" placeholder="Search for textiles, jewelry, or artisans..." type="text"/>
+</div>
+<div class="flex items-center gap-4 w-full md:w-auto overflow-x-auto pb-2 md:pb-0 custom-scrollbar">
+<span class="text-xs font-bold text-emerald/60 uppercase whitespace-nowrap">Filter by Province:</span>
+<button class="px-6 py-2 rounded-full bg-emerald text-white text-sm whitespace-nowrap hover:bg-emerald/90 transition-all">All Regions</button>
+<button class="px-6 py-2 rounded-full border border-emerald/20 text-emerald text-sm whitespace-nowrap hover:border-emerald transition-all">Kabul</button>
+<button class="px-6 py-2 rounded-full border border-emerald/20 text-emerald text-sm whitespace-nowrap hover:border-emerald transition-all">Herat</button>
+<button class="px-6 py-2 rounded-full border border-emerald/20 text-emerald text-sm whitespace-nowrap hover:border-emerald transition-all">Bamyan</button>
+<button class="px-6 py-2 rounded-full border border-emerald/20 text-emerald text-sm whitespace-nowrap hover:border-emerald transition-all">Kandahar</button>
+<button class="px-6 py-2 rounded-full border border-emerald/20 text-emerald text-sm whitespace-nowrap hover:border-emerald transition-all">Balkh</button>
+</div>
+</div>
+</section>
+<!-- Category Highlights -->
+<section class="px-8 py-20 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-sm border-t-4 border-emerald">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEv--cMgstPcMUpzo8xcndNh15Ysvr5ih4UH4wq8HUCnMqkYNyvNeAQHHgNqobkxRifWwjrEtakQdLWxfvLnLWO7-ieBeh11evbcH2sOHmUv1MWH089EJrCbSmFTycVYNXwlEJQEk3fKYlC9BzRq__zE7aSoJi9liJlMlvn-zhPCObQAUnvU43A7ZQhnRh5rDGXxrAAFulPNKePlsjmm2h6BGKVRHpb4IVGeJ70dzXeTBn7IbD62rO7uK_HBKnZILW-DwS2H-knhc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald/90 via-emerald/40 to-transparent"></div>
+<div class="absolute top-4 left-4">
+<span class="bg-pomegranate text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">Eid Special</span>
+</div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-3xl text-white mb-2">Textiles &amp; Silks</h3>
+<p class="text-white/80 text-sm max-w-xs">Intricate patterns passed down through seven generations of silk masters.</p>
+</div>
+</div>
+<div class="md:col-span-2 relative group overflow-hidden rounded-sm border-t-4 border-pomegranate">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHskoMRvobUeIndBVHUmhcDzxqTIeXAUamH803YA5Zzg2GAxTTGBAskwpJfUOWWIKasU2_o0hmSA-L6Bqp5p74omMoVuKoccoWcdE9tLpnmGmrKMBlh1P9xOBqIKyNWKnk9KX3UBKVeE1d0MYU62ybPbeYGNVPu56DOCYN857Xd6a2Q8NlHe2JDCfup1S6AvP3O9WVrGLZ9U41vJjcylnUGAWfV1ZiDDxcrxVbLCOtqJy45LfHVW9PlfhFY2q8v0HEHuN2Ag7imG0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pomegranate/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="font-headline text-2xl text-white mb-2">Heritage Jewelry</h3>
+<p class="text-white/80 text-sm">Lapis Lazuli and Silver smithing from the heart of the Hindu Kush.</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-sm border-t-4 border-emerald">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5YRiyIyeUHTET1Ju-NVSKZtrmXFdQxakO5tvrpnH64QTC9ZRAAuV8rbfoarS_mO6MV7PDYIm_jTo9aTWj6d8ve3_3DER89WKRdtk4cnE7gMeVUv7QZbpiuvFPRCxwCMvYeODDtbxBXZxk47vqBmkbcV9_o3px9r5HyfSra6twGvhXbhREtFzsR8ts13dNKu_PmqFfvfBoxjAu3XXOxZswTlc42cMTVrO1Nd5v2OoWdq9RPm6Gr1DLlhTivkC9eLZ9idd9KxELP6o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline text-xl text-white mb-1">Culinary Arts</h3>
+<span class="text-[10px] text-white/70 uppercase tracking-widest font-bold">New Collection</span>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-sm border-t-4 border-pomegranate">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5mvRZCiiiqa2vTC_wxvp-5adyRDLpoYkfWyY5b5fVmeC83RLhjJQHSBsbSstd-SLySgwhMx-ZvHCej9K8Lp48us_VcKsBU_laDsY_jgEpq_mSwWxlO-L4DMkD0_9n764GKZ_YULL1RM9dRpLuMnB8gPmpyCi_Ehhkd9J2Zq55OPcgXRj_u5WIuHmzLWbIItlNc8v0UvLzIdmC-7IC6uJPWYg_4AcPwbGj1qmp-pNgEOe80QWjQA5_W9c9nH8jIEFVU0hPMGGoomE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-pomegranate/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="font-headline text-xl text-white mb-1">Istalifi Ceramics</h3>
+<span class="text-[10px] text-white/70 uppercase tracking-widest font-bold">Verified Artisan</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Vendor List -->
+<section class="px-8 py-20 bg-surface-container-low/50">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl text-on-surface mb-4">Master Artisans <span class="text-pomegranate italic">Selected for Eid</span></h2>
+<p class="text-on-surface-variant">Each vendor has been verified for cultural authenticity and fair-trade practices. Supporting these craftsmen ensures the survival of ancient Afghan techniques.</p>
+</div>
+<div class="flex items-center gap-2 text-emerald font-bold cursor-pointer">
+<span>Sort by Popularity</span>
+<span class="material-symbols-outlined" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Vendor 1 -->
+<div class="group">
+<div class="relative mb-6 p-1 pattern-border-green">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJqmRo02zlxp9WYti8ReJt7WDQoAP1YA35bOMOazPKut1HNlkIKEEaR85uV2WXECsO5s-UjD9DrQD1QNiFdC4Zgjjf0_V5HNiDmLJTaWVr1bFu_esZnTAkNbn49PshSn80NX-CmcqCFL8zOJv2vScoCAlCVoNjJZgRWC2ld_Xk_OP2BjAt9UEBRx1zke0kG1zx8HP0Pv5WirbFUe7KYHUbwY_X8tc-3IzeHc12OknYcJEm_b8u5GBVbw1PPQcRZd3aFn7oASKN94w"/>
+</div>
+<div class="absolute top-4 left-4 bg-emerald text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span> Verified Artisan
+                        </div>
+<div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-pomegranate" data-icon="favorite" data-weight="fill">favorite</span>
+</div>
+<div class="absolute -bottom-4 left-6 bg-emerald px-4 py-1 text-white text-xs tracking-widest font-bold uppercase">
+                            Herat Province
+                        </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-emerald transition-colors">Aria Silk Masters</h3>
+<p class="text-pomegranate font-medium text-sm mb-4 uppercase tracking-tighter">Textiles • Rugs • Pashminas</p>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Specializing in double-knot silk rugs and traditional Herati floral embroidery patterns.</p>
+<a class="inline-flex items-center gap-2 text-on-surface font-bold text-sm border-b border-emerald/30 pb-1 hover:border-emerald transition-all" href="#">
+                        Explore Collection <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Vendor 2 -->
+<div class="group md:mt-16">
+<div class="relative mb-6 p-1 pattern-border-red">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5Q4yNlo2Ob-S29loIafhGHf-74YhCv4x1Ku05orgu7JoS4-SNGYDwEEFUBG8Slb0i7gSPgGaYk86DCmjK3xLSZ1Zvf6_-3uxbBl4oW3RVc8rqod9Tfpr3umLATQSsW5sYS0Yk0UiAbb8EwjCPCwbzZ9JXy03UJRrntCeNnPu8tgedRQBdurjuYVGlFR6o9dsXmhWRtCeZaRRwmn3Z-uiHBMuKnbEj6UGQeWDNaraEUbM1STnToMCngnp_KAvOVSk6JORn8gAIxk"/>
+</div>
+<div class="absolute top-4 left-4 bg-pomegranate text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            New Collection
+                        </div>
+<div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-outline-variant" data-icon="favorite">favorite</span>
+</div>
+<div class="absolute -bottom-4 left-6 bg-pomegranate px-4 py-1 text-white text-xs tracking-widest font-bold uppercase">
+                            Kabul City
+                        </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-pomegranate transition-colors">The Lazuli Atelier</h3>
+<p class="text-emerald font-medium text-sm mb-4 uppercase tracking-tighter">Fine Jewelry • Gemstones</p>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Direct-from-source Lapis Lazuli jewelry set in handcrafted sterling silver filigree.</p>
+<a class="inline-flex items-center gap-2 text-on-surface font-bold text-sm border-b border-pomegranate/30 pb-1 hover:border-pomegranate transition-all" href="#">
+                        View Boutique <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Vendor 3 -->
+<div class="group">
+<div class="relative mb-6 p-1 pattern-border-green">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzYBe2lIW8h_TZ072d40Tb4dpj3EEwH_VwIL2ruQFzyexDdc7cZjY4A_CgBspeuSWzWSrGx9w0Ocl9Vktosj1lqLQL38y7MrsuV1pzYEXsOK5UkALsvsrTqyaPludFKp2vNmD_pqJmm01tVPxRGNSjJpT1aheO_EqNcJ6K65gPCxnP6wMS-rYaEN3G2u7R3Bonw3vPkFzIMetUq1tFHCDLq7VJTItAhJP56PE0QNFlOxAkMf2KaLtfzHLMmT0R3uVz9jioI-gVpEY"/>
+</div>
+<div class="absolute top-4 left-4 bg-pomegranate text-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest">
+                            Eid Special
+                        </div>
+<div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-outline-variant" data-icon="favorite">favorite</span>
+</div>
+<div class="absolute -bottom-4 left-6 bg-emerald px-4 py-1 text-white text-xs tracking-widest font-bold uppercase">
+                            Kandahar
+                        </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface group-hover:text-emerald transition-colors">Kandahar Orchards</h3>
+<p class="text-pomegranate font-medium text-sm mb-4 uppercase tracking-tighter">Culinary • Spices • Fruits</p>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">World-renowned pomegranates, premium Grade A saffron, and organic dried fruits.</p>
+<a class="inline-flex items-center gap-2 text-on-surface font-bold text-sm border-b border-emerald/30 pb-1 hover:border-emerald transition-all" href="#">
+                        Browse Pantry <span class="material-symbols-outlined text-xs" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="mt-24 text-center">
+<button class="bg-emerald text-white px-12 py-4 rounded-md font-bold tracking-widest uppercase text-sm hover:bg-emerald/90 transition-all hover:-translate-y-1 shadow-md">
+                    Load More Artisans
+                </button>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="px-8 py-24 max-w-screen-2xl mx-auto">
+<div class="bg-onyx text-white rounded-sm p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQ_dU4KXqoKePGHt4t-WsblUSntP5U03YwShmOwKNGygP7Wx68fkaJoimeP6stLjyBDKwAeEeENp48x4Qh_BXdv-2FdUmbkt1VIxoR9G9m345SrjVScZNvquXa3G0c0vc2i60FgvU6lJ9MluPBv1soTVk3k65bQZqxVJyHrGKFUbytoS2jFzpDeNUZ1BR4RcUbjy679tUahlSPOkLTtHbWSUopihwmf1CSr76K3vZ9dTV8he7FwF4uC764RxJSZg1YARofpQGAJI"/>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Join the <span class="text-freshta-gold italic">Heritage Circle</span></h2>
+<p class="text-lg text-white/70 mb-10 leading-relaxed">Subscribe to receive exclusive access to our Eid collection drops and stories from our master craftsmen.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-white/10 border-b border-white/30 px-6 py-4 focus:outline-none focus:border-freshta-gold transition-all text-white placeholder:text-white/40" placeholder="Email Address" type="email"/>
+<button class="bg-freshta-gold text-onyx px-8 py-4 font-bold tracking-widest uppercase text-sm hover:bg-white transition-all" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-onyx text-freshta-gold px-12 py-16">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-xs">
+<div class="text-xl font-serif text-freshta-gold font-headline mb-6">Afghan Eid Bazaar</div>
+<p class="text-white/60 font-body text-sm leading-relaxed">
+                A Heritage Curator Experience dedicated to preserving and promoting the profound artistry of Afghan craftsmanship to a global audience.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-x-12 gap-y-4">
+<a class="text-white/60 hover:text-freshta-gold transition-all font-body text-sm" href="#">Privacy Policy</a>
+<a class="text-white/60 hover:text-freshta-gold transition-all font-body text-sm" href="#">Terms of Service</a>
+<a class="text-white/60 hover:text-freshta-gold transition-all font-body text-sm" href="#">Cultural Heritage</a>
+<a class="text-white/60 hover:text-freshta-gold transition-all font-body text-sm" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col items-end gap-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80" data-icon="share">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:opacity-80" data-icon="mail">mail</span>
+</div>
+<div class="text-white/40 text-xs text-right">
+                © 2024 Afghan Eid Bazaar. A Heritage Curator Experience.
+            </div>
+</div>
+</div>
+</footer>
+<button class="fixed bottom-8 right-8 bg-pomegranate text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition-transform flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+</button>
+</body></html>
