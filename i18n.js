@@ -1,5 +1,19 @@
 // i18n.js (Google Translate AI Engine Integration)
 
+// 0. Aggressively Hide Google's native UI popups
+(function hideGoogleUI() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+        iframe.goog-te-banner-frame { display: none !important; visibility: hidden !important; }
+        .goog-te-banner-frame { display: none !important; visibility: hidden !important; }
+        iframe[id^=":1.container"] { display: none !important; visibility: hidden !important; }
+        body { top: 0px !important; position: static !important; }
+        #goog-gt-tt { display: none !important; }
+        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
+    `;
+    document.head.appendChild(style);
+})();
+
 // 1. Inject Google Translate Library seamlessly
 if (!document.getElementById('google-translate-script')) {
     const script = document.createElement('script');
@@ -43,15 +57,6 @@ window.changeLanguage = function(langCode) {
 
 // 3. Update Visual UI and Cleanup Google's Default Styles
 document.addEventListener('DOMContentLoaded', () => {
-    // Inject CSS to completely hide the clunky Google Top Banner and tooltips
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .goog-te-banner-frame.skiptranslate, .goog-te-gadget-icon { display: none !important; }
-        body { top: 0px !important; }
-        #goog-gt-tt { display: none !important; }
-        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
-    `;
-    document.head.appendChild(style);
 
     const currentLang = localStorage.getItem('site_lang') || 'en';
     
