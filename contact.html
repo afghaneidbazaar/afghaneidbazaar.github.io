@@ -171,11 +171,7 @@
 <div class="afghan-border-inner p-8 md:p-12 relative overflow-hidden h-full">
 <div class="relative z-10">
 <h2 class="font-headline text-3xl mb-8 text-on-surface" data-i18n="contact.h2.1">Send an Inquiry</h2>
-<form action="https://formsubmit.co/Farooazizi@icloud.com" class="space-y-10" method="POST">
-<input type="hidden" name="_subject" value="New Inquiry — Afghan Eid Bazaar"/>
-<input type="hidden" name="_captcha" value="false"/>
-<input type="hidden" name="_next" value="https://afghaneidbazaar.github.io/contact.html"/>
-<input type="hidden" name="_template" value="table"/>
+<form id="contact-form" class="space-y-10">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 <div class="relative group/field">
 <label class="block text-xs font-bold text-on-surface-variant uppercase tracking-tighter mb-2 group-focus-within/field:text-pomegranate transition-colors" data-i18n="contact.label.24" for="name">Full Name</label>
@@ -205,6 +201,49 @@
 </button>
 </div>
 </form>
+<div id="form-success" class="hidden mt-8 p-6 bg-emerald/10 border border-emerald/30 rounded-lg text-center">
+<span class="material-symbols-outlined notranslate text-emerald text-4xl mb-2" translate="no">check_circle</span>
+<p class="text-emerald font-bold text-lg">Message Sent Successfully!</p>
+<p class="text-on-surface-variant text-sm mt-1">We'll get back to you shortly.</p>
+</div>
+<div id="form-error" class="hidden mt-8 p-6 bg-pomegranate/10 border border-pomegranate/30 rounded-lg text-center">
+<p class="text-pomegranate font-bold">Something went wrong. Please try again.</p>
+</div>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const btnText = btn.querySelector('span[data-i18n]');
+    const originalText = btnText.textContent;
+    btnText.textContent = 'Sending...';
+    btn.disabled = true;
+    btn.classList.add('opacity-60');
+
+    const data = new FormData(form);
+    data.append('_subject', 'New Inquiry — Afghan Eid Bazaar');
+    data.append('_captcha', 'false');
+    data.append('_template', 'table');
+
+    try {
+        const res = await fetch('https://formsubmit.co/ajax/Farooazizi@icloud.com', {
+            method: 'POST',
+            body: data
+        });
+        if (res.ok) {
+            form.classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        } else {
+            document.getElementById('form-error').classList.remove('hidden');
+        }
+    } catch (err) {
+        document.getElementById('form-error').classList.remove('hidden');
+    }
+    btnText.textContent = originalText;
+    btn.disabled = false;
+    btn.classList.remove('opacity-60');
+});
+</script>
 </div>
 </div>
 </div>
