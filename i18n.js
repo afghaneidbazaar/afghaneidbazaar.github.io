@@ -29,6 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 el.innerHTML = dict[key];
             }
         });
+
+        // Translate placeholder attributes
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (dict[key]) {
+                el.setAttribute('placeholder', dict[key]);
+            }
+        });
     }
 
     // Handle Right-To-Left Layouts dynamically for Dari & Pashto
