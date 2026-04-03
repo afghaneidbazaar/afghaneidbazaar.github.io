@@ -224,6 +224,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     data.append('_subject', 'New Inquiry — Afghan Eid Bazaar');
     data.append('_captcha', 'false');
     data.append('_template', 'table');
+    data.append('_cc', 'abrahim.safi.afghan@gmail.com');
 
     try {
         const res = await fetch('https://formsubmit.co/ajax/Farooazizi@icloud.com', {
