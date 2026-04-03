@@ -152,6 +152,10 @@ const translations = {
     "home.eid.community.desc": "Eid brings families, neighbours, and generations together around the Dastarkhwan — sharing meals, stories, and the warmth of togetherness.",
     "home.eid.charity.title": "Boundless Charity",
     "home.eid.charity.desc": "In the spirit of Qurbani, we share our blessings with those in need — one third for family, one third for friends, and one third for the poor.",
+    "home.director.badge": "Founder & Director",
+    "home.director.name": "Freshta Azizi",
+    "home.director.desc": "From educating future teachers at the University of Kabul to building a cultural brand in Canada, Freshta channeled every challenge into strength. She founded Freshta Afghani Design and organized the Afghan Eid Bazaar — uniting over 700 people and 30 vendors in a single day.",
+    "home.director.cta": "Read Her Full Story <span class=\"material-symbols-outlined notranslate text-primary\" translate=\"no\">arrow_forward</span>",
     "home.spirit.box1.title": "Event Calendar",
     "home.spirit.box1.desc": "Live music, poetry readings, and calligraphy workshops scheduled across three days.",
     "home.spirit.box3.title": "Volunteer Drive",
@@ -301,7 +305,7 @@ const translations = {
     "vendors.span.50": "New Collection",
     "vendors.span.51": "Verified Artisan",
     "vendors.span.52": "Sort by Popularity",
-    "nav.director": "Director",
+    "nav.director": "Director Bio",
 
     // Director Page
     "director.badge": "Founder & Director",
@@ -464,6 +468,10 @@ const translations = {
     "home.eid.community.desc": "L'Aïd réunit familles, voisins et générations autour du Dastarkhwan — partageant repas, histoires et la chaleur de la convivialité.",
     "home.eid.charity.title": "Charité Sans Limites",
     "home.eid.charity.desc": "Dans l'esprit du Qurbani, nous partageons nos bienfaits avec ceux dans le besoin — un tiers pour la famille, un tiers pour les amis, un tiers pour les pauvres.",
+    "home.director.badge": "Fondatrice et Directrice",
+    "home.director.name": "Freshta Azizi",
+    "home.director.desc": "De la formation des futurs enseignants à l'Université de Kaboul à la création d'une marque culturelle au Canada, Freshta a transformé chaque défi en force. Elle a fondé Freshta Afghani Design et organisé le Bazaar de l'Aïd Afghan — réunissant plus de 700 personnes et 30 vendeurs en une seule journée.",
+    "home.director.cta": "Lire Son Histoire Complète <span class=\"material-symbols-outlined notranslate text-primary\" translate=\"no\">arrow_forward</span>",
     "home.spirit.box1.title": "Calendrier des Événements",
     "home.spirit.box1.desc": "Musique en direct, lectures de poésie et ateliers de calligraphie prévus sur trois jours.",
     "home.spirit.box3.title": "Campagne de Bénévolat",
@@ -605,7 +613,7 @@ const translations = {
     "vendors.span.50": "Nouvelle Collection",
     "vendors.span.51": "Artisan Vérifié",
     "vendors.span.52": "Trier par popularité",
-    "nav.director": "Directrice",
+    "nav.director": "Biographie",
 
     // Page Directrice
     "director.badge": "Fondatrice et Directrice",
@@ -768,6 +776,10 @@ const translations = {
     "home.eid.community.desc": "عید، خانواده‌ها، همسایگان و نسل‌ها را دور دسترخوان گرد هم می‌آورد — غذا، داستان و گرمای همبستگی.",
     "home.eid.charity.title": "نیکوکاری بی‌حد",
     "home.eid.charity.desc": "در روح قربانی، نعمت‌های خود را با نیازمندان تقسیم می‌کنیم — یک سوم برای خانواده، یک سوم برای دوستان و یک سوم برای فقرا.",
+    "home.director.badge": "بنیانگذار و مدیره",
+    "home.director.name": "فرشته عزیزی",
+    "home.director.desc": "از آموزش معلمان آینده در دانشگاه کابل تا ساختن یک برند فرهنگی در کانادا، فرشته هر چالشی را به نیرو تبدیل کرد. او فرشته افغانی دیزاین را تأسیس کرد و بازار عید افغانی را سازماندهی نمود — بیش از ۷۰۰ نفر و ۳۰ فروشنده را در یک روز گرد هم آورد.",
+    "home.director.cta": "داستان کامل او را بخوانید <span class=\"material-symbols-outlined notranslate text-primary\" translate=\"no\">arrow_forward</span>",
     "home.spirit.box1.title": "تقویم رویدادها",
     "home.spirit.box1.desc": "موسیقی زنده، شب‌های شعر و کارگاه‌های خطاطی که برای سه روز برنامه‌ریزی شده است.",
     "home.spirit.box3.title": "فراخوان داوطلبان",
@@ -909,7 +921,7 @@ const translations = {
     "vendors.span.50": "مجموعه جدید",
     "vendors.span.51": "صنعتگر تایید شده",
     "vendors.span.52": "مرتب سازی بر اساس محبوبیت",
-    "nav.director": "مدیره",
+    "nav.director": "بیوگرافی مدیره",
 
     // صفحه مدیره
     "director.badge": "بنیانگذار و مدیره",
@@ -1072,6 +1084,10 @@ const translations = {
     "home.eid.community.desc": "اختر کورنۍ، ګاونډیان او نسلونه د دسترخوان شاوخوا راټولوي — خواړه، کیسې او د یووالي تودوخه.",
     "home.eid.charity.title": "بې حده نیکي",
     "home.eid.charity.desc": "د قربانۍ په روح کې، نعمتونه له اړمنو سره شریکوو — یوه دریمه برخه کورنۍ ته، یوه دوستانو ته او یوه فقیرانو ته.",
+    "home.director.badge": "بنسټ ایښودونکې او مدیره",
+    "home.director.name": "فرشته عزیزي",
+    "home.director.desc": "د کابل پوهنتون کې د راتلونکو ښوونکو له روزنې څخه تر کاناډا کې د کلتوري برنډ جوړولو پورې، فرشتې هره ننګونه په ځواک بدله کړه. هغې فرشته افغاني ډیزاین تأسیس کړ او د افغان اختر بازار تنظیم کړ — په یوه ورځ کې یې له ۷۰۰ څخه ډیر خلک او ۳۰ پلورونکي سره یوځای کړل.",
+    "home.director.cta": "د هغې بشپړه کیسه ولولئ <span class=\"material-symbols-outlined notranslate text-primary\" translate=\"no\">arrow_forward</span>",
     "home.spirit.box1.title": "د پیښو تقویم",
     "home.spirit.box1.desc": "ژوندۍ میوزیک، د شعر شپې او د خطاطۍ ورکشاپونه چې د دریو ورځو لپاره پلان شوي.",
     "home.spirit.box3.title": "د رضاکارانو کمپاین",
@@ -1213,7 +1229,7 @@ const translations = {
     "vendors.span.50": "نوې ټولګه",
     "vendors.span.51": "تصدیق شوی کسبګر",
     "vendors.span.52": "د شهرت له مخې ترتیب",
-    "nav.director": "مدیره",
+    "nav.director": "د مدیرې بیوګرافي",
 
     // د مدیرې پاڼه
     "director.badge": "بنسټ ایښودونکې او مدیره",
