@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Director | Afghan Eid Bazaar</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "pomegranate": "#C0392B",
+              "emerald": "#27AE60",
+              "freshta-gold": "#C8A96B",
+              "onyx-black": "#1A1A1A",
+              "alabaster-cream": "#F9F8F4",
+              "outline": "#7f7668",
+              "on-tertiary-container": "#0b4b2c",
+              "surface-container": "#f0eee7",
+              "secondary": "#b02c33",
+              "surface-variant": "#e5e2db",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e5e2db",
+              "surface": "#fcf9f2",
+              "primary-container": "#c8a96b",
+              "secondary-fixed": "#ffdad8",
+              "tertiary": "#306948",
+              "secondary-container": "#fe6667",
+              "on-secondary-container": "#69000f",
+              "on-tertiary-fixed-variant": "#145132",
+              "on-tertiary": "#ffffff",
+              "on-secondary-fixed-variant": "#8e111e",
+              "on-tertiary-fixed": "#002110",
+              "tertiary-container": "#7eba93",
+              "on-primary-container": "#533d09",
+              "background": "#F9F8F4",
+              "tertiary-fixed": "#b3f1c6",
+              "surface-dim": "#dcdad3",
+              "outline-variant": "#d0c5b5",
+              "inverse-primary": "#e3c282",
+              "tertiary-fixed-dim": "#97d4ab",
+              "primary-fixed-dim": "#e3c282",
+              "on-primary-fixed-variant": "#5a430f",
+              "primary": "#735b25",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31312c",
+              "surface-tint": "#735b25",
+              "surface-container-high": "#ebe8e1",
+              "on-surface": "#1c1c18",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fcf9f2",
+              "on-secondary-fixed": "#410006",
+              "secondary-fixed-dim": "#ffb3b0",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f6f3ec",
+              "inverse-on-surface": "#f3f0ea",
+              "on-secondary": "#ffffff",
+              "on-background": "#1c1c18",
+              "error-container": "#ffdad6",
+              "primary-fixed": "#ffdea0",
+              "on-surface-variant": "#4d463a",
+              "on-primary-fixed": "#261a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.39 11.18 5.878 18.09L30 36.18l-15.39 11.18 5.878-18.09L5.1 18.09h19.022L30 0z' fill='%23C8A96B' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-alabaster-cream font-body text-on-surface">
+<!-- Top Navigation -->
+<nav class="bg-on-surface text-background sticky top-0 z-50 w-full relative">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto relative z-10">
+<a href="index.html" class="flex items-center">
+<img alt="Freshta Gold Logo" class="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhjluz-_6WsWoVETj031mE58Xu8VM7oe1Pt1yHj3oEf3pQrXIqVZj-94XKDTTLRUj5IAps5MzNBXZClE0PDRIduadgyP_tZ8Dfedo_O0gdEAuwRTPy3vm0pyuBd0nCLQuYrPcOhsXrDsnjVH7Z2ZDXzzOByWAa1f8pzQ0UPEATvdpc41f74Wzi006eD-u_dUP2ewQpZEuNqr5mYdeKcdAn35ThGgsP6q00SUNJOuprX1VzDylgtIkVD6VzDqpxQqCBC40Ph4x7R6A" style="filter: brightness(0) saturate(100%) invert(75%) sepia(35%) saturate(544%) hue-rotate(3deg) brightness(91%) contrast(85%);"/>
+</a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.home" href="index.html">Home</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.sponsors" href="sponsors.html">Sponsors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.about" href="about.html">About Eid</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.gallery" href="gallery.html">Gallery</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.faq" href="faq.html">FAQ</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.team" href="team.html">Team</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 mx-2 block lg:inline-block" data-i18n="nav.director" href="director.html">Director</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.contact" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center bg-white/10 backdrop-blur px-4 py-1.5 rounded-full border border-white/20 text-sm font-medium">
+<button class="lang-switcher-btn px-2 text-primary font-bold transition-colors focus:outline-none" data-lang="en" onclick="changeLanguage('en')">English</button>
+<span class="w-px h-3 bg-white/20 mx-1"></span>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="fr" onclick="changeLanguage('fr')">French</button>
+<span class="w-px h-3 bg-white/20 mx-1"></span>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="fa" onclick="changeLanguage('fa')">Persian Dari</button>
+<span class="w-px h-3 bg-white/20 mx-1"></span>
+<button class="lang-switcher-btn px-2 opacity-60 hover:opacity-100 hover:text-primary transition-colors focus:outline-none" data-lang="ps" onclick="changeLanguage('ps')">Pashto</button>
+</div>
+<div class="flex items-center gap-4">
+<button class="lg:hidden text-primary focus:outline-none flex items-center" id="mobile-menu-btn">
+<span class="material-symbols-outlined notranslate text-3xl" translate="no">menu</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Dropdown Menu -->
+<div class="hidden absolute top-full left-0 w-full bg-on-surface/95 backdrop-blur-xl border-t border-white/10 shadow-2xl transition-all duration-300" id="mobile-menu">
+<div class="flex flex-col px-8 py-8 space-y-6">
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.home" href="index.html">Home</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.sponsors" href="sponsors.html">Sponsors</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.about" href="about.html">About Eid</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.gallery" href="gallery.html">Gallery</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.faq" href="faq.html">FAQ</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.team" href="team.html">Team</a>
+<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" data-i18n="nav.director" href="director.html">Director</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.contact" href="contact.html">Contact</a>
+<div class="sm:hidden flex flex-col pt-6 border-t border-white/10 gap-4 mt-2 items-start">
+<span class="text-primary font-bold tracking-widest uppercase text-xs" data-i18n="nav.language">Language Preference</span>
+<button class="lang-switcher-btn mobile-lang-btn text-primary font-bold text-left focus:outline-none" data-lang="en" onclick="changeLanguage('en')">English</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="fr" onclick="changeLanguage('fr')">French</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="fa" onclick="changeLanguage('fa')">Persian Dari</button>
+<button class="lang-switcher-btn mobile-lang-btn text-background opacity-80 hover:text-primary transition-colors text-left focus:outline-none" data-lang="ps" onclick="changeLanguage('ps')">Pashto</button>
+</div>
+</div>
+</div>
+<script src="translations.js"></script>
+<script src="i18n.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    });
+</script>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative py-24 md:py-32 hero-pattern overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<!-- Photo -->
+<div class="lg:w-5/12 flex justify-center">
+<div class="relative">
+<div class="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-freshta-gold/20">
+<img alt="Freshta Azizi — Founder & Director" class="w-full h-full object-cover object-top" src="assest/freshta-director.png"/>
+</div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-freshta-gold/10 rounded-2xl -z-10"></div>
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-emerald/10 rounded-2xl -z-10"></div>
+</div>
+</div>
+<!-- Title & Intro -->
+<div class="lg:w-7/12 text-center lg:text-left">
+<span class="inline-block px-4 py-1.5 border border-freshta-gold/40 text-freshta-gold text-xs font-bold tracking-[0.2em] uppercase mb-6 rounded-full" data-i18n="director.badge">Founder & Director</span>
+<h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface mb-4" data-i18n="director.name">Freshta Azizi</h1>
+<p class="text-freshta-gold font-semibold text-lg mb-8 tracking-wide" data-i18n="director.brand">Freshta Afghani Design</p>
+<div class="w-16 h-0.5 bg-freshta-gold mx-auto lg:mx-0 mb-8"></div>
+<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.intro">
+Freshta Azizi is a businesswoman, educator, and community leader based in British Columbia, Canada. Originally from Afghanistan, she has established herself as a powerful voice for Afghan culture and women's empowerment within the Afghan-Canadian community.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Biography Section -->
+<section class="py-20 bg-white">
+<div class="max-w-screen-md mx-auto px-8">
+<div class="space-y-8">
+<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio1">
+Before moving to Canada, Freshta served as an educator at the University of Kabul, where she trained future teachers — shaping the next generation of Afghan educators. Her transition to Canada came with significant challenges, but she never lost her identity, her vision, or her determination. Instead, she channeled every obstacle into strength and used it as fuel to build something meaningful.
+</p>
+<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio2">
+That determination led to the creation of Freshta Afghani Design — a brand dedicated to bringing Afghan culture, tradition, and fashion to Afghan-Canadians across the country. Through authentic Afghan clothing and cultural products, Freshta built a trusted name in the community. Building on this success, she expanded her vision to large-scale cultural events, organizing the Afghan Eid Bazaar — her first major event — which brought together over 30 vendors and attracted more than 700 attendees in a single day. The event became a landmark moment for the Afghan community in British Columbia, welcoming people from all cultural backgrounds.
+</p>
+<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio3">
+Beyond business, Freshta is deeply passionate about empowering other women — especially newcomer Afghan women — to build their own businesses and find their footing in Canada. She actively mentors women entrepreneurs in her community, helping them turn their skills and dreams into reality.
+</p>
+<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio4">
+Freshta is a woman of strong vision and clear goals. She rebuilt herself with even greater strength after arriving in Canada and continues to grow both as a businesswoman and a community leader. Her mission remains clear: to preserve Afghan culture in British Columbia, share it with the broader Canadian public, and inspire the next generation of Afghan-Canadian leaders.
+</p>
+</div>
+
+<!-- Quote -->
+<div class="mt-16 border-l-4 border-freshta-gold pl-8">
+<p class="font-headline text-2xl text-on-surface italic leading-relaxed" data-i18n="director.quote">"Every challenge I faced became a stepping stone. I want other Afghan women to know that their strength is enough to build something extraordinary."</p>
+<p class="mt-4 text-freshta-gold font-semibold" data-i18n="director.quote_attr">— Freshta Azizi</p>
+</div>
+
+<!-- Contact CTA -->
+<div class="mt-16 text-center">
+<a class="inline-block bg-on-surface text-white px-10 py-4 rounded-md font-bold hover:bg-on-surface/90 transition-all" href="contact.html" data-i18n="director.cta">Get in Touch</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-surface py-16">
+<div class="flex flex-col items-center justify-center">
+<img alt="Afghan Eid Bazaar Logo" class="h-24 md:h-32 w-auto object-contain drop-shadow-[0_0_25px_rgba(183,142,58,0.4)] hover:drop-shadow-[0_0_40px_rgba(183,142,58,0.6)] transition-all duration-500" src="assest/transparent-logo.png"/>
+<div class="mt-6 flex flex-col items-center gap-2 text-background/50 text-sm">
+<a href="tel:+16726732533" class="hover:text-primary transition-colors">+1 (672) 673-2533</a>
+<a href="mailto:farooazizi@icloud.com" class="hover:text-primary transition-colors">farooazizi@icloud.com</a>
+</div>
+<p class="mt-4 text-background/40 text-xs tracking-widest uppercase">© 2026 Afghan Eid Bazaar</p>
+</div>
+</footer>
+</body>
+</html>
