@@ -13,7 +13,6 @@ nav_items = [
     ("About Eid", "about.html"),
     ("Gallery", "gallery.html"),
     ("FAQ", "faq.html"),
-    ("Team", "team.html"),
     ("Contact", "contact.html")
 ]
 
