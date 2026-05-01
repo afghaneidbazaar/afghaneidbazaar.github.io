@@ -11,6 +11,7 @@ nav_items = [
     ("Vendors", "vendors.html"),
     ("Sponsors", "sponsors.html"),
     ("About Eid", "about.html"),
+    ("Gallery", "gallery.html"),
     ("FAQ", "faq.html"),
     ("Contact", "contact.html")
 ]
