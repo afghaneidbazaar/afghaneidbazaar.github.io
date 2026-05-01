@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Director | Afghan Eid Bazaar</title>
+<title>Concert | Afghan Eid Bazaar</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -84,6 +84,11 @@
         .hero-pattern {
             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.39 11.18 5.878 18.09L30 36.18l-15.39 11.18 5.878-18.09L5.1 18.09h19.022L30 0z' fill='%23C8A96B' fill-opacity='0.03'/%3E%3C/svg%3E");
         }
+        .concert-hero {
+            background: linear-gradient(135deg, rgba(26,26,26,0.85) 0%, rgba(192,57,43,0.65) 100%), url('assest/Gallery/concert.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="bg-alabaster-cream font-body text-on-surface">
@@ -98,9 +103,9 @@
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.sponsors" href="sponsors.html">Sponsors</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.about" href="about.html">About Eid</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.gallery" href="gallery.html">Gallery</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.concert" href="concert.html">Concert</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 mx-2 block lg:inline-block" data-i18n="nav.concert" href="concert.html">Concert</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.faq" href="faq.html">FAQ</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 mx-2 block lg:inline-block" data-i18n="nav.director" href="director.html">Director Bio</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.director" href="director.html">Director Bio</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.contact" href="contact.html">Contact</a>
 </div>
 <div class="flex items-center gap-6">
@@ -127,9 +132,9 @@
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.sponsors" href="sponsors.html">Sponsors</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.about" href="about.html">About Eid</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.gallery" href="gallery.html">Gallery</a>
-<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.concert" href="concert.html">Concert</a>
+<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" data-i18n="nav.concert" href="concert.html">Concert</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.faq" href="faq.html">FAQ</a>
-<a class="text-primary font-bold border-l-4 border-primary pl-4 text-xl" data-i18n="nav.director" href="director.html">Director Bio</a>
+<a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.director" href="director.html">Director Bio</a>
 <a class="text-background opacity-80 hover:text-primary transition-colors duration-300 mx-2 block lg:inline-block" data-i18n="nav.contact" href="contact.html">Contact</a>
 <div class="sm:hidden flex flex-col pt-6 border-t border-white/10 gap-4 mt-2 items-start">
 <span class="text-primary font-bold tracking-widest uppercase text-xs" data-i18n="nav.language">Language Preference</span>
@@ -156,66 +161,120 @@
 </nav>
 <main>
 <!-- Hero Section -->
-<section class="relative py-24 md:py-32 hero-pattern overflow-hidden">
-<div class="max-w-screen-2xl mx-auto px-8">
-<div class="flex flex-col lg:flex-row items-center gap-16">
-<!-- Photo -->
-<div class="lg:w-5/12 flex justify-center">
-<div class="relative">
-<div class="w-72 md:w-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-freshta-gold/20">
-<img alt="Freshta Azizi — Founder & Director" class="w-full h-auto" src="assest/Freshta.jpg"/>
-</div>
-<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-freshta-gold/10 rounded-2xl -z-10"></div>
-<div class="absolute -top-4 -left-4 w-24 h-24 bg-emerald/10 rounded-2xl -z-10"></div>
-</div>
-</div>
-<!-- Title & Intro -->
-<div class="lg:w-7/12 text-center lg:text-left">
-<span class="inline-block px-4 py-1.5 border border-freshta-gold/40 text-freshta-gold text-xs font-bold tracking-[0.2em] uppercase mb-6 rounded-full" data-i18n="director.badge">Founder & Director</span>
-<h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface mb-4" data-i18n="director.name">Freshta Azizi</h1>
-<p class="text-freshta-gold font-semibold text-lg mb-8 tracking-wide" data-i18n="director.brand">Freshta Afghani Design</p>
-<div class="w-16 h-0.5 bg-freshta-gold mx-auto lg:mx-0 mb-8"></div>
-<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.intro">
-Freshta Azizi is a businesswoman, educator, and community leader based in British Columbia, Canada. Originally from Afghanistan, she has established herself as a powerful voice for Afghan culture and women's empowerment within the Afghan-Canadian community.
+<section class="concert-hero relative py-32 md:py-48 overflow-hidden">
+<div class="max-w-screen-xl mx-auto px-8 text-center text-background">
+<span class="inline-block px-4 py-1.5 border border-freshta-gold/60 text-freshta-gold text-xs font-bold tracking-[0.2em] uppercase mb-6 rounded-full">Concert Night — May 26, 2026</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6">
+Afghan Eid Bazaar <span class="text-freshta-gold italic">&amp; Concert</span> 2026
+</h1>
+<p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 font-light mb-10 leading-relaxed">
+An unforgettable evening of live traditional Afghan music featuring <strong class="text-freshta-gold">Hamid Jalali</strong>.
 </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="https://www.eventbrite.ca/e/afghan-eid-bazaar-concert-2026-tickets-1986373880749" target="_blank" rel="noopener" class="inline-block bg-pomegranate text-white px-10 py-4 rounded-md font-bold tracking-tight shadow-lg hover:translate-y-[-2px] hover:bg-pomegranate/90 transition-all duration-300">
+Get Tickets on Eventbrite
+</a>
+<a href="#details" class="inline-block bg-white/10 backdrop-blur border border-white/30 text-background px-10 py-4 rounded-md font-bold tracking-tight hover:bg-white/20 transition-all duration-300">
+Event Details
+</a>
+</div>
+</div>
+</section>
+
+<!-- Details Section -->
+<section id="details" class="py-20 bg-white">
+<div class="max-w-screen-xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-freshta-gold font-label tracking-[0.3em] uppercase mb-4 block text-sm">The Evening</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6">An Authentic Afghan Music Experience</h2>
+<div class="w-24 h-0.5 bg-freshta-gold mx-auto"></div>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+<div class="bg-alabaster-cream p-8 rounded-xl border-l-4 border-pomegranate">
+<span class="material-symbols-outlined notranslate text-pomegranate text-4xl mb-3" translate="no">event</span>
+<h3 class="font-headline text-xl text-onyx-black mb-2">Date</h3>
+<p class="text-on-surface-variant">Tuesday, May 26, 2026</p>
+</div>
+<div class="bg-alabaster-cream p-8 rounded-xl border-l-4 border-emerald">
+<span class="material-symbols-outlined notranslate text-emerald text-4xl mb-3" translate="no">schedule</span>
+<h3 class="font-headline text-xl text-onyx-black mb-2">Time</h3>
+<p class="text-on-surface-variant">8:00 PM – Midnight</p>
+</div>
+<div class="bg-alabaster-cream p-8 rounded-xl border-l-4 border-freshta-gold">
+<span class="material-symbols-outlined notranslate text-freshta-gold text-4xl mb-3" translate="no">location_on</span>
+<h3 class="font-headline text-xl text-onyx-black mb-2">Venue</h3>
+<p class="text-on-surface-variant">Royal Palace Banquet Hall<br/>7845 Edmonds St, Burnaby, BC</p>
+</div>
+<div class="bg-alabaster-cream p-8 rounded-xl border-l-4 border-pomegranate">
+<span class="material-symbols-outlined notranslate text-pomegranate text-4xl mb-3" translate="no">confirmation_number</span>
+<h3 class="font-headline text-xl text-onyx-black mb-2">Tickets</h3>
+<p class="text-on-surface-variant">Available on Eventbrite</p>
+</div>
+</div>
+
+<!-- Performer -->
+<div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+<div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-freshta-gold/20">
+<img alt="Concert Night — Hamid Jalali" class="w-full h-auto object-cover" src="assest/Gallery/concert.jpeg"/>
+</div>
+<div>
+<span class="text-freshta-gold font-label tracking-[0.3em] uppercase mb-4 block text-sm">Featured Artist</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-6">Hamid Jalali</h2>
+<div class="w-16 h-0.5 bg-freshta-gold mb-8"></div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+Renowned for his masterful performances of traditional Afghan music, Hamid Jalali brings the soul of Afghanistan to the stage. The concert will feature the timeless sound of the <strong>Rubab</strong>, <strong>Tabla</strong>, <strong>harmonium</strong>, and other authentic Afghan instruments.
+</p>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+Expect classical Afghan songs, folk favorites, and an exclusive festive atmosphere — a night of music, heritage, and community celebration.
+</p>
+</div>
+</div>
+
+<!-- What to Expect -->
+<div class="bg-alabaster-cream rounded-2xl p-12 border border-outline-variant/20">
+<h3 class="font-headline text-3xl text-onyx-black mb-8 text-center">What to Expect</h3>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center">
+<span class="material-symbols-outlined notranslate text-pomegranate text-5xl mb-4" translate="no">music_note</span>
+<h4 class="font-headline text-xl mb-2">Live Traditional Music</h4>
+<p class="text-on-surface-variant text-sm">Classical Afghan songs and folk music performed live with authentic instruments.</p>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined notranslate text-emerald text-5xl mb-4" translate="no">celebration</span>
+<h4 class="font-headline text-xl mb-2">Festive Atmosphere</h4>
+<p class="text-on-surface-variant text-sm">An exclusive evening with the Afghan community and cultural friends from across BC.</p>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined notranslate text-freshta-gold text-5xl mb-4" translate="no">restaurant</span>
+<h4 class="font-headline text-xl mb-2">Afghan Food &amp; Bazaar</h4>
+<p class="text-on-surface-variant text-sm">Traditional Afghan cuisine and the bazaar experience continuing through the night.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
 
-<!-- Biography Section -->
-<section class="py-20 bg-white">
-<div class="max-w-screen-md mx-auto px-8">
-<div class="space-y-8">
-<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio1">
-Before moving to Canada, Freshta served as an educator at the University of Kabul, where she trained future teachers — shaping the next generation of Afghan educators. Her transition to Canada came with significant challenges, but she never lost her identity, her vision, or her determination. Instead, she channeled every obstacle into strength and used it as fuel to build something meaningful.
+<!-- CTA Section -->
+<section class="py-20 bg-on-surface text-background">
+<div class="max-w-screen-md mx-auto px-8 text-center">
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Reserve Your Seat</h2>
+<p class="text-background/80 text-lg leading-relaxed mb-10">
+Tickets are limited. Secure your spot for an unforgettable night of Afghan music and culture.
 </p>
-<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio2">
-That determination led to the creation of Freshta Afghani Design — a brand dedicated to bringing Afghan culture, tradition, and fashion to Afghan-Canadians across the country. Through authentic Afghan clothing and cultural products, Freshta built a trusted name in the community. Building on this success, she expanded her vision to large-scale cultural events, organizing the Afghan Eid Bazaar — her first major event — which brought together over 30 vendors and attracted more than 700 attendees in a single day. The event became a landmark moment for the Afghan community in British Columbia, welcoming people from all cultural backgrounds.
-</p>
-<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio3">
-Beyond business, Freshta is deeply passionate about empowering other women — especially newcomer Afghan women — to build their own businesses and find their footing in Canada. She actively mentors women entrepreneurs in her community, helping them turn their skills and dreams into reality.
-</p>
-<p class="text-on-surface-variant text-lg leading-relaxed" data-i18n="director.bio4">
-Freshta is a woman of strong vision and clear goals. She rebuilt herself with even greater strength after arriving in Canada and continues to grow both as a businesswoman and a community leader. Her mission remains clear: to preserve Afghan culture in British Columbia, share it with the broader Canadian public, and inspire the next generation of Afghan-Canadian leaders.
-</p>
-</div>
-
-<!-- Quote -->
-<div class="mt-16 border-l-4 border-freshta-gold pl-8">
-<p class="font-headline text-2xl text-on-surface italic leading-relaxed" data-i18n="director.quote">"Every challenge I faced became a stepping stone. I want other Afghan women to know that their strength is enough to build something extraordinary."</p>
-<p class="mt-4 text-freshta-gold font-semibold" data-i18n="director.quote_attr">— Freshta Azizi</p>
-</div>
-
-<!-- Contact CTA -->
-<div class="mt-16 text-center">
-<a class="inline-block bg-on-surface text-white px-10 py-4 rounded-md font-bold hover:bg-on-surface/90 transition-all" href="contact.html" data-i18n="director.cta">Get in Touch</a>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="https://www.eventbrite.ca/e/afghan-eid-bazaar-concert-2026-tickets-1986373880749" target="_blank" rel="noopener" class="inline-block bg-pomegranate text-white px-10 py-4 rounded-md font-bold tracking-tight shadow-lg hover:translate-y-[-2px] hover:bg-pomegranate/90 transition-all duration-300">
+Buy Tickets on Eventbrite
+</a>
+<a href="contact.html" class="inline-block border border-white/30 text-background px-10 py-4 rounded-md font-bold tracking-tight hover:bg-white/10 transition-all duration-300">
+Contact Us
+</a>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-on-surface py-16">
+<footer class="bg-on-surface py-16 border-t border-white/10">
 <div class="flex flex-col items-center justify-center">
 <img alt="Afghan Eid Bazaar Logo" class="h-24 md:h-32 w-auto object-contain drop-shadow-[0_0_25px_rgba(183,142,58,0.4)] hover:drop-shadow-[0_0_40px_rgba(183,142,58,0.6)] transition-all duration-500" src="assest/transparent-logo.png"/>
 <div class="mt-6 flex flex-col items-center gap-2 text-background/50 text-sm">
